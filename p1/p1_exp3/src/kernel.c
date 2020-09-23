@@ -15,7 +15,12 @@ void kernel_main(void)
 	generic_timer_init();
 	enable_interrupt_controller();
 	enable_irq();
-
+	
+	printf("slepping\n");
+	asm("WFI \r\t");
+	
+	printf("HIIIII\n");
+	disable_irq();
 	while (1){
 		uart_send(uart_recv());
 	}	

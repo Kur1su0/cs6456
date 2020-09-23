@@ -1,0 +1,52 @@
+Only in p1-4b-1/: log
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/Makefile p1-4b-1/Makefile
+3,4c3,4
+< COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only -g -O0
+< ASMOPS = -Iinclude  -g
+---
+> COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only -g -O0 -DUSE_QEMU
+> ASMOPS = -Iinclude  -g -DUSE_QEMU
+29,30c29,30
+< kernel8.img: $(SRC_DIR)/linker.ld $(OBJ_FILES)
+< 	$(ARMGNU)-ld -T $(SRC_DIR)/linker.ld -o $(BUILD_DIR)/kernel8.elf  $(OBJ_FILES)
+---
+> kernel8.img: $(SRC_DIR)/linker-qemu.ld $(OBJ_FILES)
+> 	$(ARMGNU)-ld -T $(SRC_DIR)/linker-qemu.ld -o $(BUILD_DIR)/kernel8.elf  $(OBJ_FILES)
+Only in p1-4b-1/: README
+Only in p1-4b-1/: run_qemu.sh
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/src/irq.c p1-4b-1/src/irq.c
+6d5
+< 
+51c50
+< }
+\ No newline at end of file
+---
+> }
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/src/sched.c p1-4b-1/src/sched.c
+9a10,11
+> int times = 0;
+> 
+60a63,68
+> 
+> 	times++;
+> 	if(times!=0 && times%10==0){
+> 		printf("switch %d\n",times);
+> 	}
+> 
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/src/timer.c p1-4b-1/src/timer.c
+7c7,9
+< const unsigned int interval = 200000;
+---
+> const unsigned int interval = (1<<23);
+> //const unsigned int interval = 6710886;
+> //const unsigned int interval = 200000;
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/src/timer.S p1-4b-1/src/timer.S
+18c18
+< 	lsl x0, x0, #24 
+---
+> 	lsl x0, x0, #23 
+20c20
+<     ret
+\ No newline at end of file
+---
+>     ret

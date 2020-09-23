@@ -1,0 +1,33 @@
+kernel boots
+interval is set to: 201326592
+Task A: Only run once
+Task B.1: Before changing to WAIT STATE 
+changed
+init task[3] to wait
+TASK IDLE.1: deep sleep...
+Timer interrupt received. next in 201326592 ticks
+task[3] :1
+TASK IDLE.2: im back! 
+TASK IDLE.1: deep sleep...
+Timer interrupt received. next in 201326592 ticks
+task[3] :2
+TASK IDLE.2: im back! 
+TASK IDLE.1: deep sleep...
+Timer interrupt received. next in 201326592 ticks
+task[3] :3
+TASK IDLE.2: im back! 
+find task[3] back from wait to running
+Task B.2: Back from WAIT STATE
+TASK IDLE.1: deep sleep...
+Timer interrupt received. next in 201326592 ticks
+TASK IDLE.2: im back! 
+TASK IDLE.1: deep sleep...
+Timer interrupt received. next in 201326592 ticks
+TASK IDLE.2: im back! 
+TASK IDLE.1: deep sleep...
+Timer interrupt received. next in 201326592 ticks
+TASK IDLE.2: im back! 
+TASK IDLE.1: deep sleep...
+Timer interrupt received. next in 201326592 ticks
+TASK IDLE.2: im back! 
+TASK IDLE.1: deep sleep...

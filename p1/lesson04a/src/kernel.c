@@ -6,6 +6,10 @@
 #include "sched.h"
 #include "mini_uart.h"
 
+#define RUN_LENS 9
+#define WAIT_LENS 11
+
+
 #define CP_PROC(CONTANT, PROC_NUM) \
 { \
 res = copy_process((unsigned long)&process, (unsigned long)CONTANT); \
@@ -15,17 +19,42 @@ return; \
 } \
 } 
 
+void idle_process(char *array){
+	while(1){	
+	printf("deep sleep...\n");
+	_WFI();
+	printf("im back! \n");
+	schedule();
+	}
+}
 
+void wait_process(char* array){
+
+	for (int i = 0; i < WAIT_LENS; i++){
+		uart_send(array[i]);
+		delay(5000000);
+	}
+	printf("Task B.1: Before changing to WAIT STATE \n");
+
+	change_to_state(TASK_WAIT);
+	printf("Task B.2: Back from WAIT STATE\n");
+	change_to_state(TASK_EXIT);
+	
+}
 
 void process(char *array)
 {
-	while (1){
-		for (int i = 0; i < 5; i++){
+	//while (1){
+	/*
+		for (int i = 0; i < RUN_LENS; i++){
 			uart_send(array[i]);
 			delay(5000000);
 		}
-		schedule(); // yield
-	}
+     	*/
+		printf("Task A: Only run once\n");
+		change_to_state(TASK_EXIT);
+		//schedule(); // yield
+	//}
 }
 
 void kernel_main(void)
@@ -35,29 +64,39 @@ void kernel_main(void)
 
 	printf("kernel boots\n");
 
-//	irq_vector_init();
-//	generic_timer_init();
-//	enable_interrupt_controller();
-//	enable_irq();
-
-	int res = copy_process((unsigned long)&process, (unsigned long)"12345");
+	irq_vector_init();
+	generic_timer_init();
+	enable_interrupt_controller();
+	init_wait_array();
+	int res=-1 ;
+	res = copy_idle_process((unsigned long)&idle_process, (unsigned long)"idlee");
+	if (res != 0) {
+		printf("error while starting process 1");
+		return;
+	}
+	res = copy_process((unsigned long)&process, (unsigned long)"T1:runrun");
 	if (res != 0) {
 		printf("error while starting process 1");
 		return;
 	}
 	printf("proc 1: %d\n", res );
 	
-	res = copy_process((unsigned long)&process, (unsigned long)"abcde");
+	res = copy_process((unsigned long)&wait_process, (unsigned long)"TB:waitwait");
 	if (res != 0) {
 		printf("error while starting process 2");
 		return;
 	}
 	printf("proc 2: %d\n", res );
 	
-	CP_PROC("qqqqq",3);
-	printf("proc 3: %d\n", res );
-	
+
+
+
+
+	enable_irq();
+	//CP_PROC("qqqqq",3);
+	//printf("proc 3: %d\n", res );
 	while (1){
 		schedule();
 	}	
 }
+
