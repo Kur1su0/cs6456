@@ -4,9 +4,9 @@
 #include "peripherals/timer.h"
 #include "timer.h"
 
-const unsigned int interval = (1<<23);
+const unsigned int interval = ( (1<<26)/10);
 //const unsigned int interval = 6710886;
-//const unsigned int interval = 200000;
+//const unsigned int interval = 1 * 1000 * 1000;
 unsigned int curVal = 0;
 
 void timer_init ( void )
@@ -27,11 +27,11 @@ void handle_timer_irq( void )
 void generic_timer_init ( void )
 {
 	gen_timer_init();
-	gen_timer_reset();
+	gen_timer_reset(interval);
 }
 
 void handle_generic_timer_irq( void ) 
 {
-	gen_timer_reset();
+	gen_timer_reset(interval);
     timer_tick();
 }
