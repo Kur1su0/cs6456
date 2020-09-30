@@ -1,0 +1,22 @@
+kernel boots
+interval is set to: 201326592
+-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+idle pid=1  state:42937402
+running pid=2
+proc 1: 0
+running pid=3
+proc 2: 0
+next is 2
+switch to 2 state:0
+Task A: Only run once
+next is 3
+switch to 3 state:0
+TB:waitwaitTask B.1: Before changing to WAIT STATE 
+changed
+Timer interrupt received. next in 201326592 ticks
+Timer interrupt received. next in 201326592 ticks
+Timer interrupt received. next in 201326592 ticks
+Timer interrupt received. next in 201326592 ticks
+Timer interrupt received. next in 201326592 ticks
+Timer interrupt received. next in 201326592 ticks
+

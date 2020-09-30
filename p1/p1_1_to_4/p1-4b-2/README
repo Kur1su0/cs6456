@@ -1,0 +1,5 @@
+How to Run
+
+1. make
+2. bash run_qemu.sh
+3. log File contains the output log

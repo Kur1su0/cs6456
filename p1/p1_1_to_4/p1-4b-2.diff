@@ -1,0 +1,107 @@
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/include/sched.h p1-4b-2/include/sched.h
+42a43
+> 	long cur_pid;
+55c56
+< /* state etc */	0,0,1, 0 \
+---
+> /* state etc */	0,0,1, 0,0 \
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/include/utils.h p1-4b-2/include/utils.h
+7a8
+> extern int get_tstamp ( void );
+Only in p1-4b-2/: log
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/Makefile p1-4b-2/Makefile
+3,4c3,4
+< COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only -g -O0
+< ASMOPS = -Iinclude  -g
+---
+> COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only -g -O0 -DUSE_QEMU
+> ASMOPS = -Iinclude  -g -DUSE_QEMU
+29,30c29,30
+< kernel8.img: $(SRC_DIR)/linker.ld $(OBJ_FILES)
+< 	$(ARMGNU)-ld -T $(SRC_DIR)/linker.ld -o $(BUILD_DIR)/kernel8.elf  $(OBJ_FILES)
+---
+> kernel8.img: $(SRC_DIR)/linker-qemu.ld $(OBJ_FILES)
+> 	$(ARMGNU)-ld -T $(SRC_DIR)/linker-qemu.ld -o $(BUILD_DIR)/kernel8.elf  $(OBJ_FILES)
+Only in p1-4b-2/: README
+Only in p1-4b-2/: run_qemu.sh
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/src/fork.c p1-4b-2/src/fork.c
+3a4
+> #include "printf.h"
+22a24,25
+> 
+> 	p->cur_pid = pid;
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/src/irq.c p1-4b-2/src/irq.c
+6d5
+< 
+51c50
+< }
+\ No newline at end of file
+---
+> }
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/src/sched.c p1-4b-2/src/sched.c
+3a4,9
+> #include "utils.h"
+> 
+> #define T_STAMP 0
+> #define TASK_A 1
+> #define TASK_B 2
+> #define num_contentSW 200
+9a16,36
+> int times = 0;
+> int next_pid=-1;
+> 
+> unsigned long long int sw_AtoB_array[num_contentSW][3]={{-1},{-1},{-1}};
+> 
+> void save_switch_info(int now,int after){
+> 	times++;
+> 	sw_AtoB_array[times-1][T_STAMP]=get_tstamp();
+> 	sw_AtoB_array[times-1][TASK_A]=now;
+> 	sw_AtoB_array[times-1][TASK_B]=after;
+> 	//printf("time:%d\n",times);
+> 	if(times==num_contentSW){
+> 		for(int i=0;i<num_contentSW;i++){
+> 			printf("stamp:%u\tFrom:%d\tTo:%d\t\n",sw_AtoB_array[i][T_STAMP],
+> 							      sw_AtoB_array[i][TASK_A],
+> 							      sw_AtoB_array[i][TASK_B]);
+> 		}	
+> 	times = 0;
+> 	}
+> 
+> }
+45a73
+> 	next_pid=next;
+58c86
+< 	if (current == next) 
+---
+> 	if (current == next)
+60a89,94
+> 	int now,after;
+> 	now = current->cur_pid;
+> 	after = next->cur_pid;
+> 	//printf("cur:%d,next:%d\n",now,after);
+> 	save_switch_info(now,after);
+> 
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/src/timer.c p1-4b-2/src/timer.c
+7c7,9
+< const unsigned int interval = 200000;
+---
+> const unsigned int interval = (1<<23);
+> //const unsigned int interval = 6710886;
+> //const unsigned int interval = 200000;
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/src/timer.S p1-4b-2/src/timer.S
+18c18
+< 	lsl x0, x0, #24 
+---
+> 	lsl x0, x0, #23 
+20c20
+<     ret
+\ No newline at end of file
+---
+>     ret
+diff -r /u/zw9ga/p1-kernel/src/lesson04b/src/utils.S p1-4b-2/src/utils.S
+21a22,26
+> 
+> .globl get_tstamp
+> get_tstamp:
+> 	mrs x0,cntpct_el0
+> 	ret

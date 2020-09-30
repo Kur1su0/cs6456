@@ -1,0 +1,3866 @@
+Exception return from AArch64 EL2 to AArch64 EL1 PC 0x80038
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x808d0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83130
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83130
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83158
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83158
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83130
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83130
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83158
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83158
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x8313c
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83158
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83158
+Taking exception 1 [Undefined Instruction]
+...from EL0 to EL1
+...with ESR 0x0/0x2000000
+...with ELR 0x80810
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x80814
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83178
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 5 [IRQ]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x81ec0
+...to EL1 PC 0x82480 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x81ec0
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124
+Taking exception 2 [SVC]
+...from EL0 to EL1
+...with ESR 0x15/0x56000000
+...with ELR 0x83124
+...to EL1 PC 0x82400 PSTATE 0x3c5
+Exception return from AArch64 EL1 to AArch64 EL0 PC 0x83124

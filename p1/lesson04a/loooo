@@ -1,205 +1,0 @@
-kernel boots
-interval is set to: 6710886
--1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
-idle pid=1  state:42937402
-running pid=2
-proc 1: 0
-running pid=3
-proc 2: 0
-next is 2
-switch to 2 state:0
-Task A: Only run once
-next is 3
-switch to 3 state:0
-TB:waitTimer interrupt received. next in 6710886 ticks
-waitTask B.1: Before changing to WAIT STATE 
-changed
-init task[3] to wait
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-task[3] :1
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-task[3] :2
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-task[3] :3
-im back! 
-find task[3] back from wait to running
-switch to 3 state:0
-Task B.2: Back from WAIT STATE
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...
-Timer interrupt received. next in 6710886 ticks
-im back! 
-switch to 1 state:42937402
-deep sleep...

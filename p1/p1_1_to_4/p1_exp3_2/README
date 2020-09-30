@@ -1,0 +1,5 @@
+Step to run
+1. make
+2. bash run_qemu.sh
+
+And then see output of qemu & test.log

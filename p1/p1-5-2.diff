@@ -1,0 +1,219 @@
+diff -r /u/zw9ga/p1-kernel/src/lesson05/include/sched.h p1-5-2/include/sched.h
+16a17
+> #define TASK_WAIT				2
+19a21,23
+> 
+> #define WAIT_TASK_INDEX                       	0
+> #define WAIT_TASK_COUNTER 			1
+23a28,29
+> int wait_array[NR_TASKS];
+> 
+57a64,68
+> 
+> extern void change_to_state(int state_num);
+> extern void init_wait_array();
+> extern void sleep_state(int second);
+> 
+diff -r /u/zw9ga/p1-kernel/src/lesson05/include/sys.h p1-5-2/include/sys.h
+4c4
+< #define __NR_syscalls	    4
+---
+> #define __NR_syscalls	    5
+9a10
+> #define SYS_SLEEP_NUMBER    4
+19a21
+> unsigned int call_sys_sleep(unsigned int seconds);
+diff -r /u/zw9ga/p1-kernel/src/lesson05/Makefile p1-5-2/Makefile
+3,4c3,4
+< COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only -g -O0
+< ASMOPS = -Iinclude  -g
+---
+> COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only -g -O0 -DUSE_QEMU
+> ASMOPS = -Iinclude  -g -DUSE_QEMU
+29,30c29,30
+< kernel8.img: $(SRC_DIR)/linker.ld $(OBJ_FILES)
+< 	$(ARMGNU)-ld -T $(SRC_DIR)/linker.ld -o $(BUILD_DIR)/kernel8.elf  $(OBJ_FILES)
+---
+> kernel8.img: $(SRC_DIR)/linker-qemu.ld $(OBJ_FILES)
+> 	$(ARMGNU)-ld -T $(SRC_DIR)/linker-qemu.ld -o $(BUILD_DIR)/kernel8.elf  $(OBJ_FILES)
+Only in p1-5-2/: README
+Only in p1-5-2/: run_qemu.sh
+diff -r /u/zw9ga/p1-kernel/src/lesson05/src/kernel.c p1-5-2/src/kernel.c
+28a29,58
+> void user_process_sleep(char *array)
+> {
+> 	printf("Task2.A\tbefore sleep 6\n");
+> 	call_sys_sleep(6);
+> 	printf("Task2.B\tAfter sleep\n");	
+> 	char buf[2] = {0};
+> 	while (1){
+> 		for (int i = 0; i < 5; i++){
+> 			buf[0] = array[i];
+> 			call_sys_write(buf);
+> 			delay(DELAYS);
+> 		}
+> 	}
+> }
+> void user_process_sleep2(char *array)
+> {
+> 	printf("Task3.A\tbefore sleep 3\n");
+> 	call_sys_sleep(3);
+> 	printf("Task3.B\tAfter sleep\n");	
+> 	char buf[2] = {0};
+> 	while (1){
+> 		for (int i = 0; i < 5; i++){
+> 			buf[0] = array[i];
+> 			call_sys_write(buf);
+> 			delay(DELAYS);
+> 		}
+> 	}
+> }
+> 
+> 
+48c78,91
+< 	err = call_sys_clone((unsigned long)&user_process1, (unsigned long)"abcd", stack);
+---
+> 	err = call_sys_clone((unsigned long)&user_process_sleep, (unsigned long)"abcd", stack);
+> 	if (err < 0){
+> 		printf("Error while clonning process 2\n\r");
+> 		return;
+> 	}
+> 
+> 
+> 	 
+> 	stack = call_sys_malloc();
+> 	if (stack < 0) {
+> 		printf("Error while allocating stack for process 1\n\r");
+> 		return;
+> 	}
+> 	err = call_sys_clone((unsigned long)&user_process_sleep2, (unsigned long)"qwer", stack);
+70a114
+> 	init_wait_array();
+76c120
+< 
+---
+> 	
+diff -r /u/zw9ga/p1-kernel/src/lesson05/src/sched.c p1-5-2/src/sched.c
+98a99,152
+> 
+> void change_to_state(int state_num){
+> 	switch(state_num){
+> 		case TASK_WAIT:
+> 			current->state = TASK_WAIT;
+> 			printf("changed\n");
+> 			break;
+> 		case TASK_RUNNING:
+> 			current->state = TASK_RUNNING;
+> 			break;
+> 		
+> 		default:
+> 			printf("wrong state: %d\n",state_num);
+> 	}
+> 	schedule();
+> 
+> }
+> 
+> void sleep_state(int second){
+> 	preempt_disable();
+> 	//->WAIT
+> 		//get cur id
+> 	int task_id=-1;
+> 	for (int i = 0; i < NR_TASKS; i++){
+> 		if (task[i] == current) {
+> 			task_id = i;
+> 			break;
+> 		}
+> 	}
+> 	if(task_id == -1){
+> 		printf("no running task avial\n");
+> 		return;
+> 	}
+> 	if(current->state==TASK_WAIT){
+> 		printf("Already in WAIT state\n");
+> 		return;
+> 	}
+> 	current->state= TASK_WAIT;
+> 	//->init wait array
+> 	wait_array[task_id] = second;
+> 	
+> 	preempt_enable();
+> 	schedule();
+> 
+> }
+> 
+> 
+> 
+> void init_wait_array(){
+> 	for(int i=0;i<NR_TASKS;i++){
+> 		wait_array[i] = -1;
+> 	}
+> 
+> }
+diff -r /u/zw9ga/p1-kernel/src/lesson05/src/sys.c p1-5-2/src/sys.c
+27c27,31
+< void * const sys_call_table[] = {sys_write, sys_malloc, sys_clone, sys_exit};
+---
+> int sys_sleep(int seconds){
+> 	sleep_state(seconds);
+> 	return 0;
+> }
+> void * const sys_call_table[] = {sys_write, sys_malloc, sys_clone, sys_exit,sys_sleep};
+diff -r /u/zw9ga/p1-kernel/src/lesson05/src/sys.S p1-5-2/src/sys.S
+20a21,27
+> .globl call_sys_sleep
+> call_sys_sleep:
+> 	mov w8, #SYS_SLEEP_NUMBER	
+> 	svc #0
+> 	ret
+> 
+> 
+diff -r /u/zw9ga/p1-kernel/src/lesson05/src/timer.c p1-5-2/src/timer.c
+7c7
+< const unsigned int interval = 200000;
+---
+> const unsigned int interval = (1<<26)/10;
+9a10,30
+> int frq=0;
+> void update_wait(){
+> 	frq++;
+> 	if(frq!=10) return;
+> 	else{
+> 		frq =0;
+> 	}
+> 	for(int i=0;i<NR_TASKS;i++){
+> 		if(wait_array[i]==1){
+> 			wait_array[i]=-1;
+> 			task[i]->state=TASK_RUNNING;
+> 			printf("task[%d]: back to running\n",i);
+> 		}else if(wait_array[i]!=-1){
+> 			wait_array[i]--;
+> 			printf("task[%d]: sleep countdown %d\n",i,wait_array[i]);
+> 		}
+> 	
+> 	}
+> 
+> }
+> 
+28c49
+< 	gen_timer_reset();
+---
+> 	gen_timer_reset(interval);
+33,34c54,56
+< 	gen_timer_reset();
+<     timer_tick();
+---
+> 	update_wait();
+> 	gen_timer_reset(interval);
+>     	timer_tick();
+diff -r /u/zw9ga/p1-kernel/src/lesson05/src/timer.S p1-5-2/src/timer.S
+17,18c17,18
+<     mov x0, #1
+< 	lsl x0, x0, #24 
+---
+>     	#mov x0, #1
+> 	#lsl x0, x0, #26
+20c20
+<     ret
+\ No newline at end of file
+---
+> 	ret

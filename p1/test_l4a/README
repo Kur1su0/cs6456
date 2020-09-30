@@ -1,7 +1,0 @@
-How to run:
-
-1. bash run_qemu.sh | tee log
-2. open the log file.
-
-
-

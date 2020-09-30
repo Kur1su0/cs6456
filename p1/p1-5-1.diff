@@ -1,0 +1,74 @@
+diff -r /u/zw9ga/p1-kernel/src/lesson05/Makefile p1-5-1/Makefile
+3,4c3,4
+< COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only -g -O0
+< ASMOPS = -Iinclude  -g
+---
+> COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only -g -O0 -DUSE_QEMU
+> ASMOPS = -Iinclude  -g -DUSE_QEMU
+29,30c29,30
+< kernel8.img: $(SRC_DIR)/linker.ld $(OBJ_FILES)
+< 	$(ARMGNU)-ld -T $(SRC_DIR)/linker.ld -o $(BUILD_DIR)/kernel8.elf  $(OBJ_FILES)
+---
+> kernel8.img: $(SRC_DIR)/linker-qemu.ld $(OBJ_FILES)
+> 	$(ARMGNU)-ld -T $(SRC_DIR)/linker-qemu.ld -o $(BUILD_DIR)/kernel8.elf  $(OBJ_FILES)
+Only in p1-5-1/: output
+Only in p1-5-1/: README
+Only in p1-5-1/: run_qemu.sh
+diff -r /u/zw9ga/p1-kernel/src/lesson05/src/entry.S p1-5-1/src/entry.S
+56a57,62
+> 	
+> 	.if	\el == 3
+> 	add	x22,x22,#4
+> 	msr	sp_el0, x21
+> 	
+> 	.endif /* \el == 3 */
+163c169,173
+< 	handle_invalid_entry 0, SYNC_ERROR
+---
+> 	//handle_invalid_entry 0, SYNC_ERROR
+> 	bl	handle_sync_exp
+> 	//TODO: add 4byte to curEL
+> 	
+> 	kernel_exit	3 //kernen_exit 3: bypass 4byte for currentEL
+182a193,197
+> 	bl	disable_irq				
+> 	str	x0, [sp, #S_X0]				// returned x0
+> 	kernel_exit 0
+> 
+> ret_from_exp:
+diff -r /u/zw9ga/p1-kernel/src/lesson05/src/irq.c p1-5-1/src/irq.c
+51c51,55
+< }
+\ No newline at end of file
+---
+> }
+> 
+> void handle_sync_exp(){
+> 	printf("exp received ");
+> }
+diff -r /u/zw9ga/p1-kernel/src/lesson05/src/kernel.c p1-5-1/src/kernel.c
+15a16,27
+> void user_process_exp(char *array)
+> {
+> 	char buf[2] = {0};
+> 	//el = get_el();
+> 	asm("mrs x0, CurrentEL\n\t");
+> 	printf("back to usr process\n");
+> 	for (int i = 0; i < 5; i++){
+> 		buf[0] = array[i];
+> 		call_sys_write(buf);
+> 		delay(DELAYS);
+> 	}
+> }
+25a38
+> 		
+42a56
+> 
+48c62
+< 	err = call_sys_clone((unsigned long)&user_process1, (unsigned long)"abcd", stack);
+---
+> 	err = call_sys_clone((unsigned long)&user_process_exp, (unsigned long)"back", stack);
+52a67,68
+> 	//get_el();
+> 	//printf("back\n");
+Only in p1-5-1/: test.log
