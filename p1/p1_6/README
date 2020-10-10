@@ -1,0 +1,5 @@
+HOW to Run
+1. make
+2. bash run_qemu.sh
+
+NOTE: p16.diff shows differences between orig and my modifications.

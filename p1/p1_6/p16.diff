@@ -1,0 +1,237 @@
+Only in ../p1_6/: '
+Only in ../p1_6/: build
+diff -r /u/zw9ga/p1-kernel/src/lesson06/include/mm.h ../p1_6/include/mm.h
+8a9
+> #define GEN_TIMER_ADDR 			0x40000040
+38a40,41
+> void map_timer_reg(struct task_struct *task,unsigned long pgd, unsigned long va, unsigned long page);
+> 
+diff -r /u/zw9ga/p1-kernel/src/lesson06/include/utils.h ../p1_6/include/utils.h
+3a4
+> 
+Only in ../p1_6/: kernel8.img
+diff -r /u/zw9ga/p1-kernel/src/lesson06/Makefile ../p1_6/Makefile
+3,4c3,4
+< COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only -g -O0
+< ASMOPS = -Iinclude  -g
+---
+> COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only -g -O0 -DUSE_QEMU
+> ASMOPS = -Iinclude  -g -DUSE_QEMU
+29,30c29,30
+< kernel8.img: $(SRC_DIR)/linker.ld $(OBJ_FILES)
+< 	$(ARMGNU)-ld -T $(SRC_DIR)/linker.ld -o $(BUILD_DIR)/kernel8.elf  $(OBJ_FILES)
+---
+> kernel8.img: $(SRC_DIR)/linker-qemu.ld $(OBJ_FILES)
+> 	$(ARMGNU)-ld -T $(SRC_DIR)/linker-qemu.ld -o $(BUILD_DIR)/kernel8.elf  $(OBJ_FILES)
+Only in ../p1_6/: out
+Only in ../p1_6/: p16.diff
+Only in ../p1_6/: README
+Only in ../p1_6/: run_qemu.sh
+diff -r /u/zw9ga/p1-kernel/src/lesson06/src/boot.S ../p1_6/src/boot.S
+68d67
+< 
+diff -r /u/zw9ga/p1-kernel/src/lesson06/src/entry.S ../p1_6/src/entry.S
+166a167,168
+> 	//bl handle_exp
+> 	//kernel_exit 0
+diff -r /u/zw9ga/p1-kernel/src/lesson06/src/irq.c ../p1_6/src/irq.c
+6a7
+> #define GEN
+31,34c32,38
+< 	put32(ENABLE_IRQS_1, SYSTEM_TIMER_IRQ_1);
+< 
+<   // Enables Core 0 Timers interrupt control for the generic timer
+< //  put32(TIMER_INT_CTRL_0, TIMER_INT_CTRL_0_VALUE);
+---
+> //#ifdef GEN
+> //#else
+>    //put32(ENABLE_IRQS_1, SYSTEM_TIMER_IRQ_1);
+> //#endif
+>    //Enables Core 0 Timers interrupt control for the generic timer
+>    put32(VA_START+TIMER_INT_CTRL_0, TIMER_INT_CTRL_0_VALUE);
+> 	
+42c46
+< #if 0
+---
+> //#if define GEN
+44a49
+> 	
+54,55c59,60
+< #endif
+< 
+---
+> //#else
+> /*
+66a72,78
+> */
+> //#endif
+> /*
+> void handle_exp(){
+> 	printf("timer\n");
+> 
+> }*/
+diff -r /u/zw9ga/p1-kernel/src/lesson06/src/kernel.c ../p1_6/src/kernel.c
+13a14
+> #include "mm.h"
+14a16,19
+> #include "peripherals/irq.h"
+> 
+> 
+> //#define GEN
+33c38,48
+< 
+---
+> 	//map_table_entry(current->mm.kernel_pages[current->mm.kernel_pages_count] ,VA_START+GEN_TIMER_ADDR,GEN_TIMER_ADDR);
+> 	unsigned long pgd_addr = get_pgd();
+> 	//unsigned long pgd_addr = pg_dir;
+> 	//unsigned long pgd_addr = 0x100400;
+> 	unsigned long phy_timer_addr = 0x40000040; 
+> 	unsigned long addr 	     = 0x40000000; 
+> 	
+> 	printf("pgd_addr:%x\n",pgd_addr);
+> 	printf("mapping timer\n");
+> 	printf("%s:%d...\n",__func__,__LINE__);
+> 	
+35,36c50,68
+< 	timer_init();
+< //	generic_timer_init();
+---
+> 	printf("%s:%d...\n",__func__,__LINE__);
+> 	//map_timer_reg(current,pgd_addr, VA_START +phy_timer_addr ,phy_timer_addr);
+> 	//printf("%s:%d...\n",__func__,__LINE__);
+> 	//unsigned long val = *(unsigned long*)phy_timer_addr;
+> 	//printf("%s:%d...\n",__func__,__LINE__);
+> 	//printf("---------val:%x\n",val);
+> 	
+> 	
+> 	//map_timer_reg(current,pgd_addr , (VA_START +TIMER_INT_CTRL_0) ,TIMER_INT_CTRL_0);
+> 	map_timer_reg(current,pgd_addr, (VA_START +phy_timer_addr) ,phy_timer_addr);
+> 	printf("%s:%d...\n",__func__,__LINE__);
+> 	unsigned long val1 = *(unsigned long*) (phy_timer_addr+VA_START);
+> 	printf("%s:%d...\n",__func__,__LINE__);
+> 	//map_timer_reg(current,pgd_addr, (VA_START +0x40000060) ,0x40000060);
+> 	//unsigned long val2 = *(unsigned long*) (0x40000060+VA_START);
+> 	//timer_init()
+> //#if define GEN
+> 	generic_timer_init();
+> //#endif
+diff -r /u/zw9ga/p1-kernel/src/lesson06/src/mm.c ../p1_6/src/mm.c
+3c3
+< 
+---
+> #include "printf.h"
+47a48,49
+> 	
+> 
+55c57
+< 		return next_level_table;
+---
+> 	return next_level_table;
+60a63,103
+> void map_timer_reg(struct task_struct* task, unsigned long pgd, unsigned long va, unsigned long page){
+>  	
+> 	printf("PDG:%x\n",pgd);
+> 	///unsigned long pgd;
+> 	//struct mm_struct *mm= (struct mm_struct*)allocate_kernel_page();
+> 	/*
+> 	if (!task->mm.pgd) {
+> 		//task->mm.pgd = pgd;
+> 		//pgd = get_free_page();
+> 		//task->mm.pgd = get_free_page();
+> 		task->mm.kernel_pages[++task->mm.kernel_pages_count] = task->mm.pgd;
+> 	}*/
+> 	//task->mm.pgd=pgd;
+> 	//task->mm.kernel_pages[++task->mm.kernel_pages_count] = task->mm.pgd;
+> 	//pgd = task->mm.pgd;
+> 	//pgd = get_free_page();
+> 	
+> 	int new_table;
+> 	unsigned long pud = map_table((unsigned long *)(pgd+VA_START), PGD_SHIFT, va, &new_table);
+> 	if (new_table) {
+> 		task->mm.kernel_pages[++task->mm.kernel_pages_count] = pud;
+> 		printf("new pud %x\n",pud);
+> 	}
+> 
+> 
+> 	unsigned long pmd = map_table((unsigned long *)(pud + VA_START) , PUD_SHIFT, va, &new_table);
+> 	if (new_table) {
+> 		task->mm.kernel_pages[++task->mm.kernel_pages_count] = pmd;
+> 		printf("new pmd %x\n",pmd);
+> 	}
+> 	unsigned long pte = map_table((unsigned long *)(pmd + VA_START), PMD_SHIFT, va, &new_table);
+> 	if (new_table) {
+> 		task->mm.kernel_pages[++task->mm.kernel_pages_count] = pte;
+> 		printf("new pte %x\n",pte);
+> 	}
+> 	map_table_entry((unsigned long *)(pte + VA_START), va, page);
+> 	//struct user_page p = {page, va};
+> 	//task->mm.user_pages[task->mm.user_pages_count++] = p;
+> 
+> }
+> 
+115a159
+> 
+116a161,162
+> 
+> 
+diff -r /u/zw9ga/p1-kernel/src/lesson06/src/sched.c ../p1_6/src/sched.c
+6a7
+> int time = 0;
+diff -r /u/zw9ga/p1-kernel/src/lesson06/src/timer.c ../p1_6/src/timer.c
+5a6
+> //#define GEN
+17a19
+> 	printf("timer\n");
+24,28c26,32
+< //void generic_timer_init ( void )
+< //{
+< //	gen_timer_init();
+< //	gen_timer_reset();
+< //}
+---
+> //#if define GEN
+> 
+> void generic_timer_init ( void )
+> {
+> 	gen_timer_init();
+> 	gen_timer_reset();
+> }
+30,34c34,38
+< //void handle_generic_timer_irq( void )
+< //{
+< //	gen_timer_reset();
+< //	timer_tick();
+< //}
+---
+> void handle_generic_timer_irq( void )
+> {
+> 	gen_timer_reset();
+> 	timer_tick();
+> }
+35a40
+> //#endif
+diff -r /u/zw9ga/p1-kernel/src/lesson06/src/user.c ../p1_6/src/user.c
+16a17,23
+> 
+> 
+> void test(){
+> 
+> printf("abcde\n");
+> }
+> 
+diff -r /u/zw9ga/p1-kernel/src/lesson06/src/utils.S ../p1_6/src/utils.S
+31,32c31,32
+< .globl get_pgd
+< get_pgd:
+---
+> .globl get_pgd1
+> get_pgd1:
+39a40,47
+> .globl get_pgd
+> get_pgd:
+> 	#mov x1, 0
+> 	#ldr x0, [x1]
+> 	#mov x0, 0x1000
+> 	mrs x0, ttbr1_el1
+> 	#ldr x0, [x1]
+> 	ret
