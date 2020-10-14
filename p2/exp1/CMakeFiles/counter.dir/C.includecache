@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zw9ga/git/p2-concurrency/exp1/counter.c
+/home/zw9ga/cs6456/p2/exp1/counter.c
 stdio.h
 -
 getopt.h

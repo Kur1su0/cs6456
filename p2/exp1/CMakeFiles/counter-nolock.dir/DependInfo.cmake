@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/zw9ga/git/p2-concurrency/exp1/counter-nolock.c" "/home/zw9ga/git/p2-concurrency/exp1/CMakeFiles/counter-nolock.dir/counter-nolock.c.o"
+  "/home/zw9ga/cs6456/p2/exp1/counter-nolock.c" "/home/zw9ga/cs6456/p2/exp1/CMakeFiles/counter-nolock.dir/counter-nolock.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

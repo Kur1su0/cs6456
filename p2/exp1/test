@@ -1,0 +1,1 @@
+test=add-c threadNum=10 iterations=10 numOperation=200 runTime(ns)=565079 avgTime(ns)=2825 count=0

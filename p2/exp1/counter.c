@@ -1,6 +1,5 @@
 // No spinlock and CAS code. 
 // search for "todo" for hints on where to add code
-//git update test
 #include <stdio.h>
 #include <getopt.h>
 #include <time.h>
@@ -20,7 +19,7 @@ int spinLockFlag = 0;
 int c_and_sFlag = 0;
 
 pthread_mutex_t mutex;
-// todo: define a spinlock variable 
+pthread_spinlock_t spinlock;
 
 char const * getTestName() {
     if(mutexFlag)
@@ -35,6 +34,12 @@ char const * getTestName() {
 void cleanUpLocks(){
     if(mutexFlag)
         pthread_mutex_destroy(&mutex);
+    if(spinLockFlag)
+        pthread_spin_destroy(&spinlock);
+    if(c_and_sFlag){
+	    ;
+    }
+
 }
 
 void print_csv_line(char const * test, int threadNum, int iterations, int numOperation, long long runTime, long long avgTime, long long count){
@@ -55,18 +60,24 @@ void add_iterate(int val, int iterations) {
             add(&the_counter, val);
             pthread_mutex_unlock(&mutex);
         }
-        else if(spinLockFlag) {
+        else if(spinLockFlag==1) {
             // todo: lock the spinlock
+	    pthread_spin_lock(&spinlock);
             add(&the_counter, val);
+	    pthread_spin_unlock(&spinlock);
             // todo: unlock the spinlock
         }
         else if(c_and_sFlag) {
             long long oldVal, newVal;
 			
 			/* todo: change the following, so that it updates @the_counter atomically using CAS */
-			oldVal = the_counter;
-			newVal = oldVal + val;
-			the_counter = newVal; 
+			//oldVal = the_counter;
+			//newVal = oldVal + val;
+			//the_counter = newVal; 
+	    		__atomic_store_n(&oldVal,the_counter,__ATOMIC_SEQ_CST);
+	    		__atomic_store_n(&newVal,oldVal+val,__ATOMIC_SEQ_CST);
+			long long load_counter = __atomic_load_n(&the_counter,__ATOMIC_SEQ_CST);
+			__atomic_compare_exchange_n (&load_counter, &oldVal,the_counter+val, 0, __ATOMIC_SEQ_CST,__ATOMIC_SEQ_CST);
 			/* --- */
         }
         else
@@ -118,6 +129,9 @@ int main(int argc, char** argv) {
                         mutexFlag = 1;
                         break;
                     case 's':
+			if(pthread_spin_init(&spinlock, PTHREAD_PROCESS_PRIVATE) < 0) 
+			//if(pthread_spin_init(&spinlock, PTHREAD_PROCESS_SHARED) < 0) 
+			    perror("spinLock");
                         spinLockFlag = 1;
                         break;
                     case 'c':

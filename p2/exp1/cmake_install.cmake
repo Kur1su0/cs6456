@@ -1,4 +1,4 @@
-# Install script for directory: /home/zw9ga/git/p2-concurrency/exp1
+# Install script for directory: /home/zw9ga/cs6456/p2/exp1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zw9ga/git/p2-concurrency/exp1/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zw9ga/cs6456/p2/exp1/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
