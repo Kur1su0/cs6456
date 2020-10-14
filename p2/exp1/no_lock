@@ -1,0 +1,105 @@
+test	add-none	threadNum	1	iterations	1	numOperation	2	runTime(ns)	210953	avgTime(ns)	105476	count	0
+test	add-none	threadNum	1	iterations	10	numOperation	20	runTime(ns)	209133	avgTime(ns)	10456	count	0
+test	add-none	threadNum	1	iterations	20	numOperation	40	runTime(ns)	210125	avgTime(ns)	5253	count	0
+test	add-none	threadNum	1	iterations	40	numOperation	80	runTime(ns)	216872	avgTime(ns)	2710	count	0
+test	add-none	threadNum	1	iterations	80	numOperation	160	runTime(ns)	196894	avgTime(ns)	1230	count	0
+test	add-none	threadNum	1	iterations	100	numOperation	200	runTime(ns)	208717	avgTime(ns)	1043	count	0
+test	add-none	threadNum	1	iterations	1000	numOperation	2000	runTime(ns)	230111	avgTime(ns)	115	count	0
+test	add-none	threadNum	1	iterations	10000	numOperation	20000	runTime(ns)	398335	avgTime(ns)	19	count	0
+test	add-none	threadNum	1	iterations	100000	numOperation	200000	runTime(ns)	2124334	avgTime(ns)	10	count	0
+ 
+test	add-none	threadNum	5	iterations	1	numOperation	10	runTime(ns)	318800	avgTime(ns)	31880	count	1
+test	add-none	threadNum	5	iterations	10	numOperation	100	runTime(ns)	319224	avgTime(ns)	3192	count	0
+test	add-none	threadNum	5	iterations	20	numOperation	200	runTime(ns)	334551	avgTime(ns)	1672	count	0
+test	add-none	threadNum	5	iterations	40	numOperation	400	runTime(ns)	321356	avgTime(ns)	803	count	0
+test	add-none	threadNum	5	iterations	80	numOperation	800	runTime(ns)	329419	avgTime(ns)	411	count	0
+test	add-none	threadNum	5	iterations	100	numOperation	1000	runTime(ns)	341422	avgTime(ns)	341	count	0
+test	add-none	threadNum	5	iterations	1000	numOperation	10000	runTime(ns)	407771	avgTime(ns)	40	count	607
+test	add-none	threadNum	5	iterations	10000	numOperation	100000	runTime(ns)	3402900	avgTime(ns)	34	count	3179
+test	add-none	threadNum	5	iterations	100000	numOperation	1000000	runTime(ns)	19143392	avgTime(ns)	19	count	-25276
+ 
+test	add-none	threadNum	10	iterations	1	numOperation	20	runTime(ns)	318505	avgTime(ns)	15925	count	0
+test	add-none	threadNum	10	iterations	10	numOperation	200	runTime(ns)	335436	avgTime(ns)	1677	count	0
+test	add-none	threadNum	10	iterations	20	numOperation	400	runTime(ns)	372237	avgTime(ns)	930	count	0
+test	add-none	threadNum	10	iterations	40	numOperation	800	runTime(ns)	551156	avgTime(ns)	688	count	0
+test	add-none	threadNum	10	iterations	80	numOperation	1600	runTime(ns)	534307	avgTime(ns)	333	count	0
+test	add-none	threadNum	10	iterations	100	numOperation	2000	runTime(ns)	437557	avgTime(ns)	218	count	98
+test	add-none	threadNum	10	iterations	1000	numOperation	20000	runTime(ns)	534116	avgTime(ns)	26	count	0
+test	add-none	threadNum	10	iterations	10000	numOperation	200000	runTime(ns)	5188154	avgTime(ns)	25	count	-14542
+test	add-none	threadNum	10	iterations	100000	numOperation	2000000	runTime(ns)	31935459	avgTime(ns)	15	count	-190245
+ 
+test	add-none	threadNum	20	iterations	1	numOperation	40	runTime(ns)	577992	avgTime(ns)	14449	count	0
+test	add-none	threadNum	20	iterations	10	numOperation	400	runTime(ns)	555506	avgTime(ns)	1388	count	0
+test	add-none	threadNum	20	iterations	20	numOperation	800	runTime(ns)	650648	avgTime(ns)	813	count	0
+test	add-none	threadNum	20	iterations	40	numOperation	1600	runTime(ns)	584956	avgTime(ns)	365	count	0
+test	add-none	threadNum	20	iterations	80	numOperation	3200	runTime(ns)	959919	avgTime(ns)	299	count	0
+test	add-none	threadNum	20	iterations	100	numOperation	4000	runTime(ns)	687199	avgTime(ns)	171	count	40
+test	add-none	threadNum	20	iterations	1000	numOperation	40000	runTime(ns)	652462	avgTime(ns)	16	count	1750
+test	add-none	threadNum	20	iterations	10000	numOperation	400000	runTime(ns)	8421479	avgTime(ns)	21	count	1386
+test	add-none	threadNum	20	iterations	100000	numOperation	4000000	runTime(ns)	73538839	avgTime(ns)	18	count	-120111
+ 
+test	add-none	threadNum	40	iterations	1	numOperation	80	runTime(ns)	1645693	avgTime(ns)	20571	count	0
+test	add-none	threadNum	40	iterations	10	numOperation	800	runTime(ns)	1347019	avgTime(ns)	1683	count	0
+test	add-none	threadNum	40	iterations	20	numOperation	1600	runTime(ns)	1666361	avgTime(ns)	1041	count	0
+test	add-none	threadNum	40	iterations	40	numOperation	3200	runTime(ns)	1598113	avgTime(ns)	499	count	0
+test	add-none	threadNum	40	iterations	80	numOperation	6400	runTime(ns)	1108692	avgTime(ns)	173	count	0
+test	add-none	threadNum	40	iterations	100	numOperation	8000	runTime(ns)	1766974	avgTime(ns)	220	count	0
+test	add-none	threadNum	40	iterations	1000	numOperation	80000	runTime(ns)	2021279	avgTime(ns)	25	count	-1254
+test	add-none	threadNum	40	iterations	10000	numOperation	800000	runTime(ns)	18116220	avgTime(ns)	22	count	-376
+test	add-none	threadNum	40	iterations	100000	numOperation	8000000	runTime(ns)	132962233	avgTime(ns)	16	count	-155389
+ 
+------------------------------------
+test	add-none	threadNum	1	iterations	1	numOperation	2	runTime(ns)	113953	avgTime(ns)	56976	count	0
+test	add-none	threadNum	5	iterations	1	numOperation	10	runTime(ns)	191258	avgTime(ns)	19125	count	0
+test	add-none	threadNum	10	iterations	1	numOperation	20	runTime(ns)	300388	avgTime(ns)	15019	count	0
+test	add-none	threadNum	20	iterations	1	numOperation	40	runTime(ns)	555900	avgTime(ns)	13897	count	0
+test	add-none	threadNum	40	iterations	1	numOperation	80	runTime(ns)	1282196	avgTime(ns)	16027	count	0
+ 
+test	add-none	threadNum	1	iterations	10	numOperation	20	runTime(ns)	149252	avgTime(ns)	7462	count	0
+test	add-none	threadNum	5	iterations	10	numOperation	100	runTime(ns)	237839	avgTime(ns)	2378	count	0
+test	add-none	threadNum	10	iterations	10	numOperation	200	runTime(ns)	310667	avgTime(ns)	1553	count	0
+test	add-none	threadNum	20	iterations	10	numOperation	400	runTime(ns)	563313	avgTime(ns)	1408	count	0
+test	add-none	threadNum	40	iterations	10	numOperation	800	runTime(ns)	1256100	avgTime(ns)	1570	count	0
+ 
+test	add-none	threadNum	1	iterations	20	numOperation	40	runTime(ns)	131928	avgTime(ns)	3298	count	0
+test	add-none	threadNum	5	iterations	20	numOperation	200	runTime(ns)	267087	avgTime(ns)	1335	count	0
+test	add-none	threadNum	10	iterations	20	numOperation	400	runTime(ns)	336073	avgTime(ns)	840	count	0
+test	add-none	threadNum	20	iterations	20	numOperation	800	runTime(ns)	677912	avgTime(ns)	847	count	0
+test	add-none	threadNum	40	iterations	20	numOperation	1600	runTime(ns)	1208625	avgTime(ns)	755	count	0
+ 
+test	add-none	threadNum	1	iterations	40	numOperation	80	runTime(ns)	137584	avgTime(ns)	1719	count	0
+test	add-none	threadNum	5	iterations	40	numOperation	400	runTime(ns)	211431	avgTime(ns)	528	count	7
+test	add-none	threadNum	10	iterations	40	numOperation	800	runTime(ns)	395697	avgTime(ns)	494	count	0
+test	add-none	threadNum	20	iterations	40	numOperation	1600	runTime(ns)	600557	avgTime(ns)	375	count	26
+test	add-none	threadNum	40	iterations	40	numOperation	3200	runTime(ns)	1331265	avgTime(ns)	416	count	12
+ 
+test	add-none	threadNum	1	iterations	80	numOperation	160	runTime(ns)	159036	avgTime(ns)	993	count	0
+test	add-none	threadNum	5	iterations	80	numOperation	800	runTime(ns)	270388	avgTime(ns)	337	count	0
+test	add-none	threadNum	10	iterations	80	numOperation	1600	runTime(ns)	429745	avgTime(ns)	268	count	47
+test	add-none	threadNum	20	iterations	80	numOperation	3200	runTime(ns)	717475	avgTime(ns)	224	count	0
+test	add-none	threadNum	40	iterations	80	numOperation	6400	runTime(ns)	1569266	avgTime(ns)	245	count	3
+ 
+test	add-none	threadNum	1	iterations	100	numOperation	200	runTime(ns)	174235	avgTime(ns)	871	count	0
+test	add-none	threadNum	5	iterations	100	numOperation	1000	runTime(ns)	292734	avgTime(ns)	292	count	0
+test	add-none	threadNum	10	iterations	100	numOperation	2000	runTime(ns)	419976	avgTime(ns)	209	count	49
+test	add-none	threadNum	20	iterations	100	numOperation	4000	runTime(ns)	802008	avgTime(ns)	200	count	0
+test	add-none	threadNum	40	iterations	100	numOperation	8000	runTime(ns)	1665277	avgTime(ns)	208	count	0
+ 
+test	add-none	threadNum	1	iterations	1000	numOperation	2000	runTime(ns)	206213	avgTime(ns)	103	count	0
+test	add-none	threadNum	5	iterations	1000	numOperation	10000	runTime(ns)	381619	avgTime(ns)	38	count	325
+test	add-none	threadNum	10	iterations	1000	numOperation	20000	runTime(ns)	731866	avgTime(ns)	36	count	1176
+test	add-none	threadNum	20	iterations	1000	numOperation	40000	runTime(ns)	1429653	avgTime(ns)	35	count	1818
+test	add-none	threadNum	40	iterations	1000	numOperation	80000	runTime(ns)	2922024	avgTime(ns)	36	count	1023
+ 
+test	add-none	threadNum	1	iterations	10000	numOperation	20000	runTime(ns)	403514	avgTime(ns)	20	count	0
+test	add-none	threadNum	5	iterations	10000	numOperation	100000	runTime(ns)	3447348	avgTime(ns)	34	count	903
+test	add-none	threadNum	10	iterations	10000	numOperation	200000	runTime(ns)	5839813	avgTime(ns)	29	count	-6834
+test	add-none	threadNum	20	iterations	10000	numOperation	400000	runTime(ns)	9877642	avgTime(ns)	24	count	1424
+test	add-none	threadNum	40	iterations	10000	numOperation	800000	runTime(ns)	17116654	avgTime(ns)	21	count	-3274
+ 
+test	add-none	threadNum	1	iterations	100000	numOperation	200000	runTime(ns)	849724	avgTime(ns)	4	count	0
+test	add-none	threadNum	5	iterations	100000	numOperation	1000000	runTime(ns)	12161103	avgTime(ns)	12	count	-3265
+test	add-none	threadNum	10	iterations	100000	numOperation	2000000	runTime(ns)	31088802	avgTime(ns)	15	count	-96661
+test	add-none	threadNum	20	iterations	100000	numOperation	4000000	runTime(ns)	76361103	avgTime(ns)	19	count	-97974
+test	add-none	threadNum	40	iterations	100000	numOperation	8000000	runTime(ns)	134609634	avgTime(ns)	16	count	-201206
+ 

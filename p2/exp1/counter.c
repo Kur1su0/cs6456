@@ -36,14 +36,14 @@ void cleanUpLocks(){
         pthread_mutex_destroy(&mutex);
     if(spinLockFlag)
         pthread_spin_destroy(&spinlock);
-    if(c_and_sFlag){
-	    ;
-    }
+    //if(c_and_sFlag){
+//	    ;
+ //   }
 
 }
 
 void print_csv_line(char const * test, int threadNum, int iterations, int numOperation, long long runTime, long long avgTime, long long count){
-	fprintf(stdout, "test=%s threadNum=%d iterations=%d numOperation=%d runTime(ns)=%lld avgTime(ns)=%lld count=%lld\n",
+	fprintf(stdout, "test\t%s\tthreadNum\t%d\titerations\t%d\tnumOperation\t%d\trunTime(ns)\t%lld\tavgTime(ns)\t%lld\tcount\t%lld\n",
 			test, threadNum, iterations, numOperation, runTime, avgTime, count);
 }
 
@@ -77,7 +77,7 @@ void add_iterate(int val, int iterations) {
             // todo: unlock the spinlock
         }
         else if(c_and_sFlag) {
-            long long oldVal, newVal,load_counter;
+            long long oldVal;//, newVal,load_counter;
 			
 			/* todo: change the following, so that it updates @the_counter atomically using CAS */
 			//oldVal = the_counter;
