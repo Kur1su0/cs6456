@@ -53,32 +53,41 @@ void add (long long *pointer, long long value) {
     *pointer = sum;
 }
 
+
+int cas(long long *addr, long long old, long long new){
+	
+	return __atomic_compare_exchange_n (addr, &old,new, 0, __ATOMIC_SEQ_CST,__ATOMIC_SEQ_CST);
+
+}
+
 void add_iterate(int val, int iterations) {
     for (int i = 0; i < iterations; i++) {
         if(mutexFlag){
             pthread_mutex_lock(&mutex);
+	    printf("counter:%lli\n",the_counter);
             add(&the_counter, val);
             pthread_mutex_unlock(&mutex);
         }
         else if(spinLockFlag==1) {
             // todo: lock the spinlock
 	    pthread_spin_lock(&spinlock);
+	    printf("counter:%lli\n",the_counter);
             add(&the_counter, val);
 	    pthread_spin_unlock(&spinlock);
             // todo: unlock the spinlock
         }
         else if(c_and_sFlag) {
-            long long oldVal, newVal;
+            long long oldVal, newVal,load_counter;
 			
 			/* todo: change the following, so that it updates @the_counter atomically using CAS */
 			//oldVal = the_counter;
 			//newVal = oldVal + val;
 			//the_counter = newVal; 
 	    		__atomic_store_n(&oldVal,the_counter,__ATOMIC_SEQ_CST);
-	    		__atomic_store_n(&newVal,oldVal+val,__ATOMIC_SEQ_CST);
-			long long load_counter = __atomic_load_n(&the_counter,__ATOMIC_SEQ_CST);
-			__atomic_compare_exchange_n (&load_counter, &oldVal,the_counter+val, 0, __ATOMIC_SEQ_CST,__ATOMIC_SEQ_CST);
-			/* --- */
+			while( !__atomic_compare_exchange_n (&the_counter, &oldVal,oldVal+val, 0, __ATOMIC_SEQ_CST,__ATOMIC_SEQ_CST)){
+				;
+			}
+			//printf("counter:%lli\n",the_counter);
         }
         else
             add(&the_counter, val);
