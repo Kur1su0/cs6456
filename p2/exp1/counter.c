@@ -64,14 +64,14 @@ void add_iterate(int val, int iterations) {
     for (int i = 0; i < iterations; i++) {
         if(mutexFlag){
             pthread_mutex_lock(&mutex);
-	    printf("counter:%lli\n",the_counter);
+	    //printf("counter:%lli\n",the_counter);
             add(&the_counter, val);
             pthread_mutex_unlock(&mutex);
         }
         else if(spinLockFlag==1) {
             // todo: lock the spinlock
 	    pthread_spin_lock(&spinlock);
-	    printf("counter:%lli\n",the_counter);
+	   // printf("counter:%lli\n",the_counter);
             add(&the_counter, val);
 	    pthread_spin_unlock(&spinlock);
             // todo: unlock the spinlock
