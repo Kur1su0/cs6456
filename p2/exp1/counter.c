@@ -43,11 +43,11 @@ void cleanUpLocks(){
 }
 
 void print_csv_line(char const * test, int threadNum, int iterations, int numOperation, long long runTime, long long avgTime, long long count){
-	//fprintf(stdout, "test\t%s\tthreadNum\t%d\titerations\t%d\tnumOperation\t%d\trunTime(ns)\t%lld\tavgTime(ns)\t%lld\tcount\t%lld\n",
-	//		test, threadNum, iterations, numOperation, runTime, avgTime, count);
-
-	printf("test\t%s\tthreadNum\t%d\titerations\t%d\tnumOperation\t%d\trunTime(ns)\t%lld\tavgTime(ns)\t%lld\tcount\t%lld\n",
+	fprintf(stdout, "test=%s threadNum=%d terations=%d numOperation=%d runTime(ns)=%lld avgTime(ns)=%lld count=%lld\n",
 			test, threadNum, iterations, numOperation, runTime, avgTime, count);
+
+	//printf("test\t%s\tthreadNum\t%d\titerations\t%d\tnumOperation\t%d\trunTime(ns)\t%lld\tavgTime(ns)\t%lld\tcount\t%lld\n",
+	//		test, threadNum, iterations, numOperation, runTime, avgTime, count);
 }
 
 /* ---- thread function --- */

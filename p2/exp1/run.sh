@@ -11,7 +11,7 @@ touch spin_lock
 touch cas
 
 thread_cnt="1 5 10 20 40"
-iter_cnt="1 10 100 1000 10000 100000 1000000"
+iter_cnt="100 1000 10000 100000 1000000"
 
 #add-none test
 #for i in $thread_cnt

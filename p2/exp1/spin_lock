@@ -1,42 +1,30 @@
-test	add-s	threadNum	1	iterations	1	numOperation	2	runTime(ns)	136850	avgTime(ns)	68425	count	0
-test	add-s	threadNum	5	iterations	1	numOperation	10	runTime(ns)	197224	avgTime(ns)	19722	count	0
-test	add-s	threadNum	10	iterations	1	numOperation	20	runTime(ns)	387858	avgTime(ns)	19392	count	0
-test	add-s	threadNum	20	iterations	1	numOperation	40	runTime(ns)	699613	avgTime(ns)	17490	count	0
-test	add-s	threadNum	40	iterations	1	numOperation	80	runTime(ns)	1513301	avgTime(ns)	18916	count	0
+test:add-s threadNum:1 terations:100 numOperation:200 runTime(ns):125644 avgTime(ns):628 count:0
+test:add-s threadNum:5 terations:100 numOperation:1000 runTime(ns):254477 avgTime(ns):254 count:0
+test:add-s threadNum:10 terations:100 numOperation:2000 runTime(ns):437357 avgTime(ns):218 count:0
+test:add-s threadNum:20 terations:100 numOperation:4000 runTime(ns):708345 avgTime(ns):177 count:0
+test:add-s threadNum:40 terations:100 numOperation:8000 runTime(ns):1194288 avgTime(ns):149 count:0
  
-test	add-s	threadNum	1	iterations	10	numOperation	20	runTime(ns)	116790	avgTime(ns)	5839	count	0
-test	add-s	threadNum	5	iterations	10	numOperation	100	runTime(ns)	214391	avgTime(ns)	2143	count	0
-test	add-s	threadNum	10	iterations	10	numOperation	200	runTime(ns)	355840	avgTime(ns)	1779	count	0
-test	add-s	threadNum	20	iterations	10	numOperation	400	runTime(ns)	770365	avgTime(ns)	1925	count	0
-test	add-s	threadNum	40	iterations	10	numOperation	800	runTime(ns)	1477814	avgTime(ns)	1847	count	0
+test:add-s threadNum:1 terations:1000 numOperation:2000 runTime(ns):185805 avgTime(ns):92 count:0
+test:add-s threadNum:5 terations:1000 numOperation:10000 runTime(ns):1352499 avgTime(ns):135 count:0
+test:add-s threadNum:10 terations:1000 numOperation:20000 runTime(ns):3065805 avgTime(ns):153 count:0
+test:add-s threadNum:20 terations:1000 numOperation:40000 runTime(ns):7160421 avgTime(ns):179 count:0
+test:add-s threadNum:40 terations:1000 numOperation:80000 runTime(ns):14363014 avgTime(ns):179 count:0
  
-test	add-s	threadNum	1	iterations	100	numOperation	200	runTime(ns)	155437	avgTime(ns)	777	count	0
-test	add-s	threadNum	5	iterations	100	numOperation	1000	runTime(ns)	228164	avgTime(ns)	228	count	0
-test	add-s	threadNum	10	iterations	100	numOperation	2000	runTime(ns)	346630	avgTime(ns)	173	count	0
-test	add-s	threadNum	20	iterations	100	numOperation	4000	runTime(ns)	759290	avgTime(ns)	189	count	0
-test	add-s	threadNum	40	iterations	100	numOperation	8000	runTime(ns)	1723150	avgTime(ns)	215	count	0
+test:add-s threadNum:1 terations:10000 numOperation:20000 runTime(ns):345596 avgTime(ns):17 count:0
+test:add-s threadNum:5 terations:10000 numOperation:100000 runTime(ns):9569201 avgTime(ns):95 count:0
+test:add-s threadNum:10 terations:10000 numOperation:200000 runTime(ns):18017308 avgTime(ns):90 count:0
+test:add-s threadNum:20 terations:10000 numOperation:400000 runTime(ns):58089309 avgTime(ns):145 count:0
+test:add-s threadNum:40 terations:10000 numOperation:800000 runTime(ns):211441302 avgTime(ns):264 count:0
  
-test	add-s	threadNum	1	iterations	1000	numOperation	2000	runTime(ns)	203409	avgTime(ns)	101	count	0
-test	add-s	threadNum	5	iterations	1000	numOperation	10000	runTime(ns)	1360726	avgTime(ns)	136	count	0
-test	add-s	threadNum	10	iterations	1000	numOperation	20000	runTime(ns)	3228634	avgTime(ns)	161	count	0
-test	add-s	threadNum	20	iterations	1000	numOperation	40000	runTime(ns)	8538086	avgTime(ns)	213	count	0
-test	add-s	threadNum	40	iterations	1000	numOperation	80000	runTime(ns)	15235674	avgTime(ns)	190	count	0
+test:add-s threadNum:1 terations:100000 numOperation:200000 runTime(ns):2458275 avgTime(ns):12 count:0
+test:add-s threadNum:5 terations:100000 numOperation:1000000 runTime(ns):94778954 avgTime(ns):94 count:0
+test:add-s threadNum:10 terations:100000 numOperation:2000000 runTime(ns):230452850 avgTime(ns):115 count:0
+test:add-s threadNum:20 terations:100000 numOperation:4000000 runTime(ns):592501005 avgTime(ns):148 count:0
+test:add-s threadNum:40 terations:100000 numOperation:8000000 runTime(ns):1908123552 avgTime(ns):238 count:0
  
-test	add-s	threadNum	1	iterations	10000	numOperation	20000	runTime(ns)	344026	avgTime(ns)	17	count	0
-test	add-s	threadNum	5	iterations	10000	numOperation	100000	runTime(ns)	8930570	avgTime(ns)	89	count	0
-test	add-s	threadNum	10	iterations	10000	numOperation	200000	runTime(ns)	25135167	avgTime(ns)	125	count	0
-test	add-s	threadNum	20	iterations	10000	numOperation	400000	runTime(ns)	55191720	avgTime(ns)	137	count	0
-test	add-s	threadNum	40	iterations	10000	numOperation	800000	runTime(ns)	152147866	avgTime(ns)	190	count	0
- 
-test	add-s	threadNum	1	iterations	100000	numOperation	200000	runTime(ns)	2435422	avgTime(ns)	12	count	0
-test	add-s	threadNum	5	iterations	100000	numOperation	1000000	runTime(ns)	91902534	avgTime(ns)	91	count	0
-test	add-s	threadNum	10	iterations	100000	numOperation	2000000	runTime(ns)	242086864	avgTime(ns)	121	count	0
-test	add-s	threadNum	20	iterations	100000	numOperation	4000000	runTime(ns)	593715798	avgTime(ns)	148	count	0
-test	add-s	threadNum	40	iterations	100000	numOperation	8000000	runTime(ns)	1767797248	avgTime(ns)	220	count	0
- 
-test	add-s	threadNum	1	iterations	1000000	numOperation	2000000	runTime(ns)	32399327	avgTime(ns)	16	count	0
-test	add-s	threadNum	5	iterations	1000000	numOperation	10000000	runTime(ns)	673394568	avgTime(ns)	67	count	0
-test	add-s	threadNum	10	iterations	1000000	numOperation	20000000	runTime(ns)	2007999508	avgTime(ns)	100	count	0
-test	add-s	threadNum	20	iterations	1000000	numOperation	40000000	runTime(ns)	6323419731	avgTime(ns)	158	count	0
-test	add-s	threadNum	40	iterations	1000000	numOperation	80000000	runTime(ns)	18188740798	avgTime(ns)	227	count	0
+test:add-s threadNum:1 terations:1000000 numOperation:2000000 runTime(ns):30802149 avgTime(ns):15 count:0
+test:add-s threadNum:5 terations:1000000 numOperation:10000000 runTime(ns):691342301 avgTime(ns):69 count:0
+test:add-s threadNum:10 terations:1000000 numOperation:20000000 runTime(ns):1848279834 avgTime(ns):92 count:0
+test:add-s threadNum:20 terations:1000000 numOperation:40000000 runTime(ns):5948556690 avgTime(ns):148 count:0
+test:add-s threadNum:40 terations:1000000 numOperation:80000000 runTime(ns):18035393232 avgTime(ns):225 count:0
  

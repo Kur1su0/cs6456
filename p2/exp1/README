@@ -1,0 +1,6 @@
+0. cmake .
+1. make
+2. sh run_cmd.sh (iteration=100,000 Th=10, 4 methods)
+
+To get data
+3. sh run.sh (then see no_lock,mlock,spin_lock,cas)

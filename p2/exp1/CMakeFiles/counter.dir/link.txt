@@ -1,1 +1,0 @@
-gcc  -std=gnu99 -g -Wall -Wextra -pthread  -rdynamic CMakeFiles/counter.dir/counter.c.o  -o counter 
