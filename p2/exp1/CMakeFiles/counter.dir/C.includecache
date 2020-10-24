@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zw9ga/cs6456/p2/exp1/counter.c
+stdio.h
+-
+getopt.h
+-
+time.h
+-
+stdlib.h
+-
+string.h
+-
+errno.h
+-
+pthread.h
+-
+
