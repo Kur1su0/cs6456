@@ -1,0 +1,132 @@
+USE_PREALLOC=yes
+USE_MULTILISTS=no
+USE_LB=yes
+USE_PADDING=no
+init 1 mutex, 4 spinlocks
+init 1 lists. sizeof(SortedList_t) = 24 padding seems: OFF
+init 1000000 elements
+list 0: 1000000 items; 
+total 1000000 items
+--------------------k2_measure_flush------#samples=6---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      2133801312 
+                                init done            9030      2133810342 
+                              tr launched              43      2133810385 
+                                 tr start              37      2133810422 
+                                  tr done           22031      2133832453 
+                                tr joined              54      2133832507 
+ TOTAL: 31195 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none-4part threadNum=1 iterations=1000000 numList=4 numOperation=1000000 runTime(ms)=22 tput(Mops)=45.12
+USE_PREALLOC=yes
+USE_MULTILISTS=no
+USE_LB=yes
+USE_PADDING=no
+init 1 mutex, 8 spinlocks
+init 2 lists. sizeof(SortedList_t) = 24 padding seems: OFF
+init 2000000 elements
+list 0: 1000000 items; list 1: 1000000 items; 
+total 2000000 items
+--------------------k2_measure_flush------#samples=8---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      2133841056 
+                                init done            8707      2133849763 
+                              tr launched              71      2133849834 
+                                 tr start               4      2133849838 
+                                 tr start              35      2133849873 
+                                  tr done           25704      2133875577 
+                                  tr done             781      2133876358 
+                                tr joined              45      2133876403 
+ TOTAL: 35347 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none-8part threadNum=2 iterations=1000000 numList=8 numOperation=2000000 runTime(ms)=26 tput(Mops)=75.07
+USE_PREALLOC=yes
+USE_MULTILISTS=no
+USE_LB=yes
+USE_PADDING=no
+init 1 mutex, 16 spinlocks
+init 4 lists. sizeof(SortedList_t) = 24 padding seems: OFF
+init 4000000 elements
+list 0: 1000000 items; list 1: 1000000 items; list 2: 1000000 items; list 3: 1000000 items; 
+total 4000000 items
+--------------------k2_measure_flush------#samples=12---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      2133896835 
+                                init done            5554      2133902389 
+                                 tr start              57      2133902446 
+                                 tr start              38      2133902484 
+                                 tr start              47      2133902531 
+                              tr launched               1      2133902532 
+                                 tr start              36      2133902568 
+                                  tr done           29784      2133932352 
+                                  tr done            2704      2133935056 
+                                  tr done             110      2133935166 
+                                  tr done            1783      2133936949 
+                                tr joined              41      2133936990 
+ TOTAL: 40155 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none-16part threadNum=4 iterations=1000000 numList=16 numOperation=4000000 runTime(ms)=34 tput(Mops)=115.60
+USE_PREALLOC=yes
+USE_MULTILISTS=no
+USE_LB=yes
+USE_PADDING=no
+init 1 mutex, 24 spinlocks
+init 6 lists. sizeof(SortedList_t) = 24 padding seems: OFF
+init 6000000 elements
+list 0: 1000000 items; list 1: 1000000 items; list 2: 1000000 items; list 3: 1000000 items; list 4: 1000000 items; list 5: 1000000 items; 
+total 6000000 items
+--------------------k2_measure_flush------#samples=16---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      2133959066 
+                                init done            8503      2133967569 
+                                 tr start              76      2133967645 
+                                 tr start              29      2133967674 
+                                 tr start              38      2133967712 
+                                 tr start              47      2133967759 
+                                 tr start              33      2133967792 
+                              tr launched               8      2133967800 
+                                 tr start              40      2133967840 
+                                  tr done           28954      2133996794 
+                                  tr done            1296      2133998090 
+                                  tr done             994      2133999084 
+                                  tr done            1796      2134000880 
+                                  tr done             174      2134001054 
+                                  tr done             609      2134001663 
+                                tr joined              77      2134001740 
+ TOTAL: 42674 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none-24part threadNum=6 iterations=1000000 numList=24 numOperation=6000000 runTime(ms)=34 tput(Mops)=175.59
+USE_PREALLOC=yes
+USE_MULTILISTS=no
+USE_LB=yes
+USE_PADDING=no
+init 1 mutex, 32 spinlocks
+init 8 lists. sizeof(SortedList_t) = 24 padding seems: OFF
+init 8000000 elements
+list 0: 1750000 items; list 1: 750000 items; list 2: 750000 items; list 3: 1000000 items; list 4: 750000 items; list 5: 750000 items; list 6: 750000 items; list 7: 1500000 items; 
+total 8000000 items
+--------------------k2_measure_flush------#samples=20---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      2134032850 
+                                init done            9409      2134042259 
+                                 tr start              80      2134042339 
+                                 tr start              50      2134042389 
+                                 tr start              57      2134042446 
+                                 tr start              41      2134042487 
+                                 tr start             106      2134042593 
+                                 tr start              31      2134042624 
+                                 tr start              50      2134042674 
+                              tr launched               7      2134042681 
+                                 tr start              42      2134042723 
+                                  tr done           36133      2134078856 
+                                  tr done             253      2134079109 
+                                  tr done             407      2134079516 
+                                  tr done             258      2134079774 
+                                  tr done               7      2134079781 
+                                  tr done            2152      2134081933 
+                                  tr done             425      2134082358 
+                                  tr done            1050      2134083408 
+                                tr joined              98      2134083506 
+ TOTAL: 50656 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none-32part threadNum=8 iterations=1000000 numList=32 numOperation=8000000 runTime(ms)=41 tput(Mops)=193.95
