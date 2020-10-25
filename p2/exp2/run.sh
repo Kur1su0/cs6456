@@ -2,7 +2,7 @@
 # set -x 
 
 # TODO: Switch between the following two to disable/enable VTUNE profiling
-# VTUNE="vtune -collect hotspot -knob sampling-mode=hw"
+#VTUNE="vtune -collect hotspot -knob sampling-mode=hw"
 VTUNE=
 
 # TODO: Switch among the following three for # of iterations
@@ -22,8 +22,8 @@ run() {
   echo $1 $2 $3
   
   # TODO: Set thread counts to test here
-  # for tr in 1 2 4 6 8 10 12 16 20
-  for tr in 1 2 4 6 8
+  for tr in 1 2 4 6 8 10 12 16 20
+  #for tr in 1 2 4 6 8
   #for tr in {1..8}
 
   #for tr in 1 2
