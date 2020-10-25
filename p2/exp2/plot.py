@@ -98,7 +98,7 @@ for progid, prog in enumerate(progs):
 		expname = exp['test']
 
 		threadNum = int(exp['threadNum'])
-		if threadNum >= MAX_CORE:
+		if threadNum > MAX_CORE:
 			continue
 		#iterations = int(l['iterations'])
 		#t = float(l['numOperation']) / float(l['runTime(ns)']) * 1e3  # Mops/sec
