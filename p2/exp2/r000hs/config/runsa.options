@@ -16,6 +16,6 @@
 --itt-config=task,event,counter
 --p-state-trigger=CPU_CLK_UNHALTED.REF_TSC
 --
-./list-pml
+./list
 --iterations=1M
---threads=16
+--threads=20
