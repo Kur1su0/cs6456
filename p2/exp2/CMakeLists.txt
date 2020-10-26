@@ -7,7 +7,8 @@ SET(USE_VTUNE "1")
 SET(USE_INIT_ELEMENTS "0")
 
 # -- apply to all configurations --- #
-SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99 -g -Wall -Wextra -Werror -pthread -O2")
+#SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99 -g -Wall -Wextra -Werror -pthread -O2")
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99 -g -Wall -Wextra -pthread -O2")
 #SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread")
 SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS}")
 SET(CMAKE_C_COMPILER "gcc")
@@ -109,6 +110,24 @@ set_target_properties(list-pmla PROPERTIES
   COMPILE_FLAGS "-DUSE_PREALLOC -DUSE_LB -DUSE_PADDING" )
 TARGET_LINK_LIBRARIES(list-pmla
         ${COMMON_LIB}
+        )        
+
+# ------------------------------------- #
+find_package(PkgConfig REQUIRED)
+pkg_search_module(GLIB REQUIRED glib-2.0)
+
+include_directories(${GLIB_INCLUDE_DIRS})
+link_directories(${GLIB_LIBRARY_DIRS})
+
+add_executable(list-hash
+  hash.c
+  helper.c
+  ${COMMON_SOURCES}
+)
+add_definitions(${GLIB_CFLAGS_OTHER})
+TARGET_LINK_LIBRARIES(list-hash
+        ${COMMON_LIB}
+	${GLIB_LIBRARIES}
         )        
 # ------------------------------------- #
 #add_executable(list9

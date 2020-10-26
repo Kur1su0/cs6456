@@ -21,6 +21,8 @@ set(CMAKE_TARGET_DEFINITIONS_C
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "."
   "/data/intel/vtune_profiler/include"
+  "/usr/local/include/glib-2.0"
+  "/usr/local/lib/x86_64-linux-gnu/glib-2.0/include"
   )
 
 # Targets to which this target links.
