@@ -225,6 +225,7 @@ int main(int argc, char** argv) {
 		int iterations = the_config.iterations;
 		int numParts = the_config.numParts;
 		num_hashtables = atoi(argv[3]);
+		numParts = num_hashtables;
 		printf("numbers of tables%d\n",num_hashtables);
 
 

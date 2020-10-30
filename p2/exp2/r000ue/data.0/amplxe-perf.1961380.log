@@ -1,0 +1,119 @@
+Using CPUID GenuineIntel-6-4F-1
+Compression enabled, disabling build id collection at the end of the session.
+path: /home/zw9ga/git/cs6456/p2/exp2/r000ue/data.0
+basename: system-wide.perf
+nr_cblocks: 0
+affinity: SYS
+mmap flush: 1
+comp level: 1
+mmap size 528384B
+thread 0 monitor: 0 allowed: 0
+thread 1 monitor: 1 allowed: 1
+thread 2 monitor: 2 allowed: 2
+thread 3 monitor: 3 allowed: 3
+thread 4 monitor: 4 allowed: 4
+thread 5 monitor: 5 allowed: 5
+thread 6 monitor: 6 allowed: 6
+thread 7 monitor: 7 allowed: 7
+thread 8 monitor: 8 allowed: 8
+thread 9 monitor: 9 allowed: 9
+thread 10 monitor: 10 allowed: 10
+thread 11 monitor: 11 allowed: 11
+thread 12 monitor: 12 allowed: 12
+thread 13 monitor: 13 allowed: 13
+thread 14 monitor: 14 allowed: 14
+thread 15 monitor: 15 allowed: 15
+thread 16 monitor: 16 allowed: 16
+thread 17 monitor: 17 allowed: 17
+thread 18 monitor: 18 allowed: 18
+thread 19 monitor: 19 allowed: 19
+thread 20 monitor: 20 allowed: 20
+thread 21 monitor: 21 allowed: 21
+thread 22 monitor: 22 allowed: 22
+thread 23 monitor: 23 allowed: 23
+thread 24 monitor: 24 allowed: 24
+thread 25 monitor: 25 allowed: 25
+thread 26 monitor: 26 allowed: 26
+thread 27 monitor: 27 allowed: 27
+thread 28 monitor: 28 allowed: 28
+thread 29 monitor: 29 allowed: 29
+thread 30 monitor: 30 allowed: 30
+thread 31 monitor: 31 allowed: 31
+thread 32 monitor: 32 allowed: 32
+thread 33 monitor: 33 allowed: 33
+thread 34 monitor: 34 allowed: 34
+thread 35 monitor: 35 allowed: 35
+thread 36 monitor: 36 allowed: 36
+thread 37 monitor: 37 allowed: 37
+thread 38 monitor: 38 allowed: 38
+thread 39 monitor: 39 allowed: 39
+couldn't open /proc/1/task/1/maps
+couldn't open /proc/102928/task/102928/maps
+couldn't open /proc/102929/task/102929/maps
+couldn't open /proc/102943/task/102943/maps
+couldn't open /proc/1033/task/1033/maps
+couldn't open /proc/103981/task/103981/maps
+couldn't open /proc/1241/task/1241/maps
+couldn't open /proc/1244/task/1244/maps
+couldn't open /proc/1286/task/1286/maps
+couldn't open /proc/1295/task/1295/maps
+couldn't open /proc/1297/task/1297/maps
+couldn't open /proc/1306/task/1306/maps
+couldn't open /proc/1307/task/1307/maps
+couldn't open /proc/1313/task/1313/maps
+couldn't open /proc/1315/task/1315/maps
+couldn't open /proc/1320/task/1320/maps
+couldn't open /proc/1354/task/1354/maps
+couldn't open /proc/1371/task/1371/maps
+couldn't open /proc/1532679/task/1532679/maps
+couldn't open /proc/1592777/task/1592777/maps
+couldn't open /proc/167746/task/167746/maps
+couldn't open /proc/1824914/task/1824914/maps
+couldn't open /proc/1824917/task/1824917/maps
+couldn't open /proc/1836911/task/1836911/maps
+couldn't open /proc/1838510/task/1838510/maps
+couldn't open /proc/1937520/task/1937520/maps
+couldn't open /proc/1937526/task/1937526/maps
+couldn't open /proc/1937636/task/1937636/maps
+couldn't open /proc/1937643/task/1937643/maps
+couldn't open /proc/1940382/task/1940382/maps
+couldn't open /proc/1940461/task/1940461/maps
+couldn't open /proc/1942464/task/1942464/maps
+couldn't open /proc/1942466/task/1942466/maps
+couldn't open /proc/1947126/task/1947126/maps
+couldn't open /proc/1947129/task/1947129/maps
+couldn't open /proc/1950698/task/1950698/maps
+couldn't open /proc/1950778/task/1950778/maps
+couldn't open /proc/1950779/task/1950779/maps
+couldn't open /proc/1951022/task/1951022/maps
+couldn't open /proc/1951032/task/1951032/maps
+couldn't open /proc/1951038/task/1951038/maps
+couldn't open /proc/1951115/task/1951115/maps
+couldn't open /proc/1951116/task/1951116/maps
+couldn't open /proc/1951265/task/1951265/maps
+couldn't open /proc/1957406/task/1957406/maps
+couldn't open /proc/1957507/task/1957507/maps
+couldn't open /proc/1957508/task/1957508/maps
+couldn't open /proc/1959964/task/1959964/maps
+couldn't open /proc/1960065/task/1960065/maps
+couldn't open /proc/1960066/task/1960066/maps
+couldn't open /proc/1960917/task/1960917/maps
+couldn't open /proc/1961337/task/1961337/maps
+couldn't open /proc/239522/task/239522/maps
+couldn't open /proc/24004/task/24004/maps
+couldn't open /proc/24777/task/24777/maps
+couldn't open /proc/3417/task/3417/maps
+couldn't open /proc/728/task/728/maps
+couldn't open /proc/772/task/772/maps
+couldn't open /proc/85706/task/85706/maps
+couldn't open /proc/85710/task/85710/maps
+couldn't open /proc/938279/task/938279/maps
+couldn't open /proc/938283/task/938283/maps
+couldn't open /proc/938415/task/938415/maps
+couldn't open /proc/938422/task/938422/maps
+couldn't open /proc/998/task/998/maps
+cmd_pipe: /tmp/amplxe-tmp-zw9ga/perf-pipe-1961361-10573902936531104
+
+1961381:perf-sync:ready:SYS=4810710394977359
+[ perf record: Woken up 630 times to write data ]
+[ perf record: Captured and wrote 0.528 MB /home/zw9ga/git/cs6456/p2/exp2/r000ue/data.0, compressed (original 1.370 MB, ratio is 7.499) ]
