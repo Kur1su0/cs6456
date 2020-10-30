@@ -71,7 +71,8 @@ progs = [
 	"trace-p",
 	"trace-pm",
 	"trace-pml",
-	"trace-pmla"
+	"trace-pmla",
+        "trace-hash"
 ]
 
 
@@ -81,7 +82,8 @@ legend_names = [
 	"-p (partlists)",
 	"-pm (partlists,nomalloc)",
 	"-pml (partlists,nomalloc,nostraggler)",
-	"-pmla (partlists,nomalloc,nostraggler,nofalsesharing)"
+	"-pmla (partlists,nomalloc,nostraggler,nofalsesharing)",
+        "-hash (big table with 1000 hashtable)"
 ]
 
 for progid, prog in enumerate(progs):

@@ -248,7 +248,7 @@ int main(int argc, char** argv) {
 	    assert(hTable[i]!=NULL);
 
     }
-    //GHashTable* hash_table = hTable[0];
+    //GHashTable* hash_table = hTable[0];:
     
     keys = gen_key(the_n_elements);
     index = (int*)calloc(1*the_n_elements,sizeof(int));
@@ -259,7 +259,7 @@ int main(int argc, char** argv) {
 
     //1 lcok per table
     alloc_locks(&mutexes, num_hashtables, NULL, 0);  // multilists or biglock: only 1 mutex, no spinlocks
-    alloc_locks(&thread_mutexes, numThreads, NULL, 0);  // multilists or biglock: only 1 mutex, no spinlocks
+    alloc_locks(&thread_mutexes, 1, NULL, 0);  // multilists or biglock: only 1 mutex, no spinlocks
 
    // lists = alloc_lists(numThreads);
     //lists = alloc_lists(1);

@@ -34,29 +34,60 @@ run() {
   cat $TRACEFILE | grep "test="
 }
 
+
+run_hash() {
+  PROG=$1
+  TRACEFILE=$2
+  FACTOR=$3  # #of parts=factor x # of threads
+
+      
+  rm -rf $TRACEFILE
+  touch $TRACEFILE
+  
+  echo $1 $2 $3
+  
+  # TODO: Set thread counts to test here
+  for tr in 1 2 4 6 8 10 12 16 20
+  #for tr in 1 2 4 6 8
+  #for tr in {1..8}
+
+  #for tr in 1 2
+  do 
+    $VTUNE $PROG --iterations=$ITER  --threads=$tr 1000 >> $TRACEFILE 2>&1   
+  done
+  
+  cat $TRACEFILE | grep "test="
+}
 #####################
 # biglock
-run "./list" "trace-.txt" 1
+#run "./list" "trace-.txt" 1
 
 #####################
 # malloc
 #run "./lab2_list-malloc" "trace-malloc.txt" 1
-run "./list-p" "trace-p.txt" 1
+#run "./list-p" "trace-p.txt" 1
 
 #####################
 # no malloc, no stealing
 #run "./lab2_list-steal" "trace-nomalloc-nosteal.txt" 1
-run "./list-pm" "trace-pm.txt" 1
+#run "./list-pm" "trace-pm.txt" 1
 
 #####################
 # no malloc, stealing
 #run "./lab2_list-steal" "trace-nomalloc-steal.txt" 4
-run "./list-pml" "trace-pml.txt" 1
+#run "./list-pml" "trace-pml.txt" 1
 
 #####################
 # no malloc, stealing, padding
 # run "./lab2_list-steal-padding" "trace-nomalloc-steal-padding.txt" 4
-run "./list-pmla" "trace-pmla.txt" 1
+#run "./list-pmla" "trace-pmla.txt" 1
+
+
+#####################
+#run-hash
+run_hash "./list-hash" "trace-hash.txt" 1
+
+
 
 #####################
 # best
