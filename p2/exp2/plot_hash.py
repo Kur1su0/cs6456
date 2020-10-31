@@ -74,7 +74,7 @@ progs = [
 
 # corresponding to the progs above
 legend_names = [
-        "-hash (big table with 1000 hashtable)",
+        "-hash (big table with 750 hashtable)",
 	"-hash (biglock)"
 ]
 
