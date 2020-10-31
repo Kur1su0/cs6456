@@ -67,21 +67,15 @@ progs = [
 '''
 
 progs = [
-	"trace-",
-	"trace-p",
-	"trace-pm",
-	"trace-pml",
-	"trace-pmla"
+        "trace-hash",
+        "trace-hash_big"
 ]
 
 
 # corresponding to the progs above
 legend_names = [
-	"baseline (biglock)",
-	"-p (partlists)",
-	"-pm (partlists,nomalloc)",
-	"-pml (partlists,nomalloc,nostraggler)",
-	"-pmla (partlists,nomalloc,nostraggler,nofalsesharing)"
+	"-hash (biglock)",
+        "-hash (big table with 1000 hashtable)"
 ]
 
 for progid, prog in enumerate(progs):
@@ -112,7 +106,7 @@ for progid, prog in enumerate(progs):
 
 	#show(column(row(ps), pp))
 	
-	output_file(f"res-{progid}.html", title="res")
+	output_file(f"res-hash-{progid}.html", title="res")
 	#export_png(pp, filename="res.png")
 
 	# final touch...

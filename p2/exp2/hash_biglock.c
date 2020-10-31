@@ -171,7 +171,7 @@ void* thread_func(void* thread_id){
     vtune_task_begin(id);
     while(i < key_factor){ //key_factor: num iter
 	    key_id = id + i*numThreads;
-	    which_table= keys[key_id]%num_hashtables;
+	    which_table = 0;
 	    pthread_mutex_lock(&mutexes[which_table]);
 	    g_hash_table_insert(hTable[which_table],&index[key_id],
 			    &keys[key_id]);//GINT_TO_POINTER(keys[i]));
@@ -229,9 +229,8 @@ int main(int argc, char** argv) {
 		numThreads = the_config.numThreads;
 		int iterations = the_config.iterations;
 		int numParts = the_config.numParts;
-		num_hashtables = atoi(argv[3]);
-		numParts = num_hashtables;
-		printf("numbers of tables%d\n",num_hashtables);
+		//num_hashtables = atoi(argv[3]);
+		//printf("numbers of tables%d\n",num_hashtables);
 
 
     signal(SIGSEGV, signal_handler);
@@ -244,6 +243,8 @@ int main(int argc, char** argv) {
 
     key_factor = iterations;
 
+    num_hashtables = 1;
+    //numParts = num_hashtables;
 
 
     //init hash table

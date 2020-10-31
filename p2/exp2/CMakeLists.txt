@@ -129,6 +129,16 @@ TARGET_LINK_LIBRARIES(list-hash
 	${GLIB_LIBRARIES}
         )        
 # ------------------------------------- #
+add_executable(list-hash_biglock
+  hash_biglock.c
+  ${COMMON_SOURCES}
+)
+add_definitions(${GLIB_CFLAGS_OTHER})
+TARGET_LINK_LIBRARIES(list-hash_biglock
+        ${COMMON_LIB}
+	${GLIB_LIBRARIES}
+        )        
+# ------------------------------------- #
 #add_executable(list9
 #  list9.c
 #  ${COMMON_SOURCES}
