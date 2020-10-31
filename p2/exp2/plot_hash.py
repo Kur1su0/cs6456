@@ -67,15 +67,24 @@ progs = [
 '''
 
 progs = [
-        "trace-hash",
-        "trace-hash_big"
-]
+        "trace-hash_big",
+        "trace-hash10",
+        "trace-hash100",
+        "trace-hash750",
+        "trace-hash1000",
+        "trace-hash10000"
+
+        ]
 
 
 # corresponding to the progs above
 legend_names = [
+	"-hash (biglock)",
+        "-hash (big table with 10 hashtable)",
+        "-hash (big table with 100 hashtable)",
         "-hash (big table with 750 hashtable)",
-	"-hash (biglock)"
+        "-hash (big table with 1000 hashtable)",
+        "-hash (big table with 10000 hashtable)"
 ]
 
 for progid, prog in enumerate(progs):

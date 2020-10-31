@@ -1,0 +1,320 @@
+USE_PREALLOC=no
+USE_MULTILISTS=no
+USE_LB=no
+USE_PADDING=no
+init 10000 mutex, 0 spinlocks
+init 1 mutex, 0 spinlocks
+numbers of tables10000
+key verification: Identical
+--------------------k2_measure_flush------#samples=7---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      3678983861 
+                                init done          332962      3679316823 
+                              tr launched               1      3679316824 
+                              tr launched              28      3679316852 
+                                 tr start              41      3679316893 
+                                  tr done          187581      3679504474 
+                                tr joined             104      3679504578 
+ TOTAL: 520717 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none threadNum=1 iterations=1000000 numList=10000 numOperation=1000000 runTime(ms)=187 tput(Mops)=5.33
+USE_PREALLOC=no
+USE_MULTILISTS=no
+USE_LB=no
+USE_PADDING=no
+init 10000 mutex, 0 spinlocks
+init 1 mutex, 0 spinlocks
+numbers of tables10000
+key verification: Identical
+--------------------k2_measure_flush------#samples=9---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      3679573954 
+                                init done          323770      3679897724 
+                              tr launched               1      3679897725 
+                              tr launched              52      3679897777 
+                                 tr start              29      3679897806 
+                                 tr start              19      3679897825 
+                                  tr done          252609      3680150434 
+                                  tr done            1968      3680152402 
+                                tr joined             102      3680152504 
+ TOTAL: 578550 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none-2part threadNum=2 iterations=1000000 numList=10000 numOperation=2000000 runTime(ms)=254 tput(Mops)=7.85
+USE_PREALLOC=no
+USE_MULTILISTS=no
+USE_LB=no
+USE_PADDING=no
+init 10000 mutex, 0 spinlocks
+init 1 mutex, 0 spinlocks
+numbers of tables10000
+key verification: Identical
+--------------------k2_measure_flush------#samples=13---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      3680341569 
+                                init done          348601      3680690170 
+                              tr launched               1      3680690171 
+                                 tr start              84      3680690255 
+                                 tr start              60      3680690315 
+                                 tr start               4      3680690319 
+                              tr launched              90      3680690409 
+                                 tr start              44      3680690453 
+                                  tr done          319518      3681009971 
+                                  tr done             563      3681010534 
+                                  tr done            1391      3681011925 
+                                  tr done           23062      3681034987 
+                                tr joined             170      3681035157 
+ TOTAL: 693588 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none-4part threadNum=4 iterations=1000000 numList=10000 numOperation=4000000 runTime(ms)=344 tput(Mops)=11.59
+USE_PREALLOC=no
+USE_MULTILISTS=no
+USE_LB=no
+USE_PADDING=no
+init 10000 mutex, 0 spinlocks
+init 1 mutex, 0 spinlocks
+numbers of tables10000
+key verification: Identical
+--------------------k2_measure_flush------#samples=17---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      3681618035 
+                                init done          393241      3682011276 
+                              tr launched               0      3682011276 
+                                 tr start              91      3682011367 
+                                 tr start              10      3682011377 
+                                 tr start              41      3682011418 
+                                 tr start              61      3682011479 
+                              tr launched              68      3682011547 
+                                 tr start               0      3682011547 
+                                 tr start              43      3682011590 
+                                  tr done          422538      3682434128 
+                                  tr done             324      3682434452 
+                                  tr done             307      3682434759 
+                                  tr done             316      3682435075 
+                                  tr done              21      3682435096 
+                                  tr done           34095      3682469191 
+                                tr joined             250      3682469441 
+ TOTAL: 851406 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none-6part threadNum=6 iterations=1000000 numList=10000 numOperation=6000000 runTime(ms)=458 tput(Mops)=13.10
+USE_PREALLOC=no
+USE_MULTILISTS=no
+USE_LB=no
+USE_PADDING=no
+init 10000 mutex, 0 spinlocks
+init 1 mutex, 0 spinlocks
+numbers of tables10000
+key verification: Identical
+--------------------k2_measure_flush------#samples=21---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      3683604359 
+                                init done          415391      3684019750 
+                              tr launched               1      3684019751 
+                                 tr start              84      3684019835 
+                                 tr start              14      3684019849 
+                                 tr start              42      3684019891 
+                                 tr start              71      3684019962 
+                                 tr start              67      3684020029 
+                                 tr start              60      3684020089 
+                                 tr start              69      3684020158 
+                              tr launched              26      3684020184 
+                                 tr start              41      3684020225 
+                                  tr done          431250      3684451475 
+                                  tr done               2      3684451477 
+                                  tr done             299      3684451776 
+                                  tr done             384      3684452160 
+                                  tr done             761      3684452921 
+                                  tr done             190      3684453111 
+                                  tr done             110      3684453221 
+                                  tr done           33641      3684486862 
+                                tr joined             273      3684487135 
+ TOTAL: 882776 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none-8part threadNum=8 iterations=1000000 numList=10000 numOperation=8000000 runTime(ms)=467 tput(Mops)=17.12
+USE_PREALLOC=no
+USE_MULTILISTS=no
+USE_LB=no
+USE_PADDING=no
+init 10000 mutex, 0 spinlocks
+init 1 mutex, 0 spinlocks
+numbers of tables10000
+key verification: Identical
+--------------------k2_measure_flush------#samples=25---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      3686095250 
+                                init done          441981      3686537231 
+                              tr launched               0      3686537231 
+                                 tr start              83      3686537314 
+                                 tr start              20      3686537334 
+                                 tr start              39      3686537373 
+                                 tr start              51      3686537424 
+                                 tr start             114      3686537538 
+                                 tr start             118      3686537656 
+                                 tr start              44      3686537700 
+                                 tr start              45      3686537745 
+                                 tr start               1      3686537746 
+                              tr launched              31      3686537777 
+                                 tr start              12      3686537789 
+                                  tr done          610600      3687148389 
+                                  tr done             500      3687148889 
+                                  tr done            1673      3687150562 
+                                  tr done            2421      3687152983 
+                                  tr done              77      3687153060 
+                                  tr done            2866      3687155926 
+                                  tr done            1179      3687157105 
+                                  tr done            5486      3687162591 
+                                  tr done            1002      3687163593 
+                                  tr done           72364      3687235957 
+                                tr joined             243      3687236200 
+ TOTAL: 1140950 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none-10part threadNum=10 iterations=1000000 numList=10000 numOperation=10000000 runTime(ms)=698 tput(Mops)=14.31
+USE_PREALLOC=no
+USE_MULTILISTS=no
+USE_LB=no
+USE_PADDING=no
+init 10000 mutex, 0 spinlocks
+init 1 mutex, 0 spinlocks
+numbers of tables10000
+key verification: Identical
+--------------------k2_measure_flush------#samples=29---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      3689583709 
+                                init done          468518      3690052227 
+                              tr launched               0      3690052227 
+                                 tr start              84      3690052311 
+                                 tr start              22      3690052333 
+                                 tr start              42      3690052375 
+                                 tr start              45      3690052420 
+                                 tr start              66      3690052486 
+                                 tr start              88      3690052574 
+                                 tr start              99      3690052673 
+                                 tr start              42      3690052715 
+                                 tr start              43      3690052758 
+                                 tr start               2      3690052760 
+                                 tr start             118      3690052878 
+                              tr launched              33      3690052911 
+                                 tr start              13      3690052924 
+                                  tr done          639987      3690692911 
+                                  tr done           18419      3690711330 
+                                  tr done              14      3690711344 
+                                  tr done             519      3690711863 
+                                  tr done             453      3690712316 
+                                  tr done             508      3690712824 
+                                  tr done            4091      3690716915 
+                                  tr done            4924      3690721839 
+                                  tr done           28130      3690749969 
+                                  tr done           11118      3690761087 
+                                  tr done               1      3690761088 
+                                  tr done            2374      3690763462 
+                                tr joined             249      3690763711 
+ TOTAL: 1180002 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none-12part threadNum=12 iterations=1000000 numList=10000 numOperation=12000000 runTime(ms)=711 tput(Mops)=16.87
+USE_PREALLOC=no
+USE_MULTILISTS=no
+USE_LB=no
+USE_PADDING=no
+init 10000 mutex, 0 spinlocks
+init 1 mutex, 0 spinlocks
+numbers of tables10000
+key verification: Identical
+--------------------k2_measure_flush------#samples=37---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      3693623421 
+                                init done          513991      3694137412 
+                              tr launched               1      3694137413 
+                                 tr start              88      3694137501 
+                                 tr start              17      3694137518 
+                                 tr start              37      3694137555 
+                                 tr start              50      3694137605 
+                                 tr start              75      3694137680 
+                                 tr start              52      3694137732 
+                                 tr start              64      3694137796 
+                                 tr start              43      3694137839 
+                                 tr start               3      3694137842 
+                                 tr start              34      3694137876 
+                                 tr start             101      3694137977 
+                                 tr start              51      3694138028 
+                                 tr start              74      3694138102 
+                                 tr start              26      3694138128 
+                              tr launched              85      3694138213 
+                                 tr start              24      3694138237 
+                                 tr start              14      3694138251 
+                                  tr done          756904      3694895155 
+                                  tr done           66937      3694962092 
+                                  tr done            2058      3694964150 
+                                  tr done           20075      3694984225 
+                                  tr done           39054      3695023279 
+                                  tr done               2      3695023281 
+                                  tr done               2      3695023283 
+                                  tr done               9      3695023292 
+                                  tr done            6970      3695030262 
+                                  tr done               1      3695030263 
+                                  tr done             517      3695030780 
+                                  tr done            9749      3695040529 
+                                  tr done           32493      3695073022 
+                                  tr done               1      3695073023 
+                                  tr done            1335      3695074358 
+                                  tr done            6676      3695081034 
+                                tr joined             127      3695081161 
+ TOTAL: 1457740 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none-16part threadNum=16 iterations=1000000 numList=10000 numOperation=16000000 runTime(ms)=943 tput(Mops)=16.95
+USE_PREALLOC=no
+USE_MULTILISTS=no
+USE_LB=no
+USE_PADDING=no
+init 10000 mutex, 0 spinlocks
+init 1 mutex, 0 spinlocks
+numbers of tables10000
+key verification: Identical
+--------------------k2_measure_flush------#samples=45---------------
+                                     msg   delta(tod/us)        now(tod) 
+*                                    init               0      3699092333 
+                                init done          562542      3699654875 
+                              tr launched               0      3699654875 
+                                 tr start              86      3699654961 
+                                 tr start               4      3699654965 
+                                 tr start              54      3699655019 
+                                 tr start             117      3699655136 
+                                 tr start              41      3699655177 
+                                 tr start              53      3699655230 
+                                 tr start              44      3699655274 
+                                 tr start              82      3699655356 
+                                 tr start              38      3699655394 
+                                 tr start               3      3699655397 
+                                 tr start              32      3699655429 
+                                 tr start              57      3699655486 
+                                 tr start              52      3699655538 
+                                 tr start              39      3699655577 
+                                 tr start              51      3699655628 
+                                 tr start             119      3699655747 
+                              tr launched             317      3699656064 
+                                 tr start              37      3699656101 
+                                 tr start             295      3699656396 
+                                 tr start             297      3699656693 
+                                 tr start             104      3699656797 
+                                  tr done         1139913      3700796710 
+                                  tr done               8      3700796718 
+                                  tr done           46328      3700843046 
+                                  tr done           63384      3700906430 
+                                  tr done           93163      3700999593 
+                                  tr done           35788      3701035381 
+                                  tr done            1777      3701037158 
+                                  tr done            2551      3701039709 
+                                  tr done           48047      3701087756 
+                                  tr done           18174      3701105930 
+                                  tr done           23209      3701129139 
+                                  tr done           28235      3701157374 
+                                  tr done           49580      3701206954 
+                                  tr done           17185      3701224139 
+                                  tr done            9123      3701233262 
+                                  tr done             797      3701234059 
+                                  tr done            1010      3701235069 
+                                  tr done            2354      3701237423 
+                                  tr done            1378      3701238801 
+                                  tr done           11136      3701249937 
+                                tr joined             233      3701250170 
+ TOTAL: 2157837 us(gettimeofday)  tracebuf overflow: 0
+---------------------------------------------------------------
+test=list-none-20part threadNum=20 iterations=1000000 numList=10000 numOperation=20000000 runTime(ms)=1595 tput(Mops)=12.54

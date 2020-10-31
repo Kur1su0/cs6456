@@ -39,12 +39,12 @@ run_hash() {
   PROG=$1
   TRACEFILE=$2
   FACTOR=$3  # #of parts=factor x # of threads
-
-      
+	
+  NUM_TABLE=$4
   rm -rf $TRACEFILE
   touch $TRACEFILE
   
-  echo $1 $2 $3
+  echo $1 $2 $3 $4
   
   # TODO: Set thread counts to test here
   for tr in 1 2 4 6 8 10 12 16 20
@@ -54,7 +54,7 @@ run_hash() {
   #for tr in 1 2
   do
 	  echo "thr=$tr"
-    $VTUNE $PROG --iterations=$ITER  --threads=$tr 750 >> $TRACEFILE 2>&1   
+    $VTUNE $PROG --iterations=$ITER  --threads=$tr $NUM_TABLE >> $TRACEFILE 2>&1   
   done
   
   cat $TRACEFILE | grep "verifi\|test="
@@ -116,7 +116,11 @@ run_hash_big_table() {
 
 #####################
 #run-hash
-run_hash "./list-hash" "trace-hash.txt" 1
+run_hash "./list-hash" "trace-hash10.txt" 1 10
+run_hash "./list-hash" "trace-hash100.txt" 1 100
+run_hash "./list-hash" "trace-hash750.txt" 1 750
+run_hash "./list-hash" "trace-hash1000.txt" 1 1000
+run_hash "./list-hash" "trace-hash10000.txt" 1 10000
 #run_hash_big_table "./list-hash" "trace-hash_big.txt" 1
 
 
