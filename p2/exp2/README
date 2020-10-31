@@ -1,0 +1,30 @@
+
+
+run
+1. run_hash.sh
+2. python3 plot_hash.py
+-----------------------------------------------------------------
+single run
+./list-hash  --iterations=1M --threads=[#ofThread] [#of hashtable]
+
+e.g.
+./list-hash  --iterations=1M --threads=16 100
+
+
+when #of hashtable > 1 ==> bigtable implementation
+when #of hashtable == 1 ==> biglock implementation
+
+
+------------------------------------------------------------------
+To check all the keys in the hash table
+run
+cat $TRACEFILE | grep "verifi\|test=" 
+or 
+./list-hash  --iterations=1M --threads=16 100  | grep "verifi\|test="
+
+------------------------------------------------------------------
+
+
+
+
+

@@ -85,7 +85,7 @@ run_hash_big_table() {
     $VTUNE $PROG --iterations=$ITER  --threads=$tr 1 >> $TRACEFILE 2>&1   
   done
   
-  cat $TRACEFILE | grep "test="
+  cat $TRACEFILE | grep "verifi\|test="
 }
 
 
@@ -121,7 +121,7 @@ run_hash "./list-hash" "trace-hash100.txt" 1 100
 run_hash "./list-hash" "trace-hash750.txt" 1 750
 run_hash "./list-hash" "trace-hash1000.txt" 1 1000
 run_hash "./list-hash" "trace-hash10000.txt" 1 10000
-#run_hash_big_table "./list-hash" "trace-hash_big.txt" 1
+run_hash_big_table "./list-hash" "trace-hash_big.txt" 1
 
 
 

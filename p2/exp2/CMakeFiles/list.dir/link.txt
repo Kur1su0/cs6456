@@ -1,1 +1,0 @@
-gcc  -std=c99 -g -Wall -Wextra -pthread -O2  -rdynamic CMakeFiles/list.dir/list.c.o CMakeFiles/list.dir/SortedList.c.o CMakeFiles/list.dir/common.c.o CMakeFiles/list.dir/measure.c.o  -o list  /data/intel/vtune_profiler/lib64/libittnotify.a -ldl 
