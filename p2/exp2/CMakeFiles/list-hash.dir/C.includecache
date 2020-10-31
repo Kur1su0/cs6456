@@ -34,11 +34,11 @@ stdint.h
 wchar.h
 -
 
-/home/zw9ga/cs6456/p2/exp2/common.h
+/home/zw9ga/git/cs6456/p2/exp2/common.h
 pthread.h
 -
 
-/home/zw9ga/cs6456/p2/exp2/hash.c
+/home/zw9ga/git/cs6456/p2/exp2/hash.c
 stdio.h
 -
 stdlib.h
@@ -58,17 +58,15 @@ errno.h
 ittnotify.h
 -
 common.h
-/home/zw9ga/cs6456/p2/exp2/common.h
+/home/zw9ga/git/cs6456/p2/exp2/common.h
 measure.h
-/home/zw9ga/cs6456/p2/exp2/measure.h
+/home/zw9ga/git/cs6456/p2/exp2/measure.h
 glib.h
 -
-
-/home/zw9ga/cs6456/p2/exp2/helper.c
-glib.h
+time.h
 -
 
-/home/zw9ga/cs6456/p2/exp2/measure.h
+/home/zw9ga/git/cs6456/p2/exp2/measure.h
 stdint.h
 -
 sys/types.h

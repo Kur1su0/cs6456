@@ -196,23 +196,30 @@ void* thread_func(void* thread_id){
 
 void final_check(){
 	int total=0,part=0;
+	/*
 	for(int i=0; i<num_hashtables;i++){
 		part = g_hash_table_size(hTable[i]);
 		//printf("table[%i]=%i\n",i, part);
 		total += part;
 
 	}
-	printf("\nTotal items:%d\n",total);
+	*/
+	//printf("\nTotal items:%d\n",total);
 
-	/*
 	for(int i=0; i<num_hashtables;i++){
 		g_hash_table_foreach(hTable[i], check_key, NULL);
 	}
 
 	for(int i=0; i<the_n_elements;i++){
 		//printf("key[%d]:%d\n",i,check_array[i]);
+		if(check_array[i]==1) total++;
 	}
-	*/
+	if(total==the_n_elements){
+		printf("key verification: Identical\n");
+	}
+	else{
+		printf("key verification: Failed\n");
+	}
 
 }
 
@@ -296,7 +303,6 @@ int main(int argc, char** argv) {
     
     k2_measure("tr launched");
 
-    printf("line:%d---\n",__LINE__);
     for(int i = 0; i < numThreads; i++){
         thread_id[i] = i;
         int rc = pthread_create(&threads[i], NULL, thread_func, &thread_id[i]);
@@ -305,7 +311,6 @@ int main(int argc, char** argv) {
         }
     }
 
-    printf("line:%d---\n",__LINE__);
     k2_measure("tr launched");
 
     for(int i = 0; i < numThreads; i++){
@@ -340,7 +345,7 @@ int main(int argc, char** argv) {
     
     // we're done. correctness check up
     {
-    	long total = 0;
+    	//long total = 0;
 	final_check();
 	/*
 			for(int i = 0; i < numThreads; i++) {
@@ -363,17 +368,16 @@ int main(int argc, char** argv) {
 
     // --- clean up ---- //
     free_locks(mutexes, num_hashtables, NULL);
-    free_locks(thread_mutexes, numThreads, NULL);
-    free(keys);
-    free(index);
-    free(check_array);
+    free_locks(thread_mutexes, 1, NULL);
     for (int i=0; i<num_hashtables; i++){
 	    g_hash_table_destroy(hTable[i]);
     }
-    //free(keys);
+    free(keys);
+    free(index);
+    free(check_array);
     //free(lists);
-
     exit(0);
+
 }
 
 

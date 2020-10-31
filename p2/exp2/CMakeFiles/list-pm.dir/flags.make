@@ -6,5 +6,5 @@ C_FLAGS =  -std=c99 -g -Wall -Wextra -pthread -O2   -DUSE_PREALLOC -DUSE_MULTILI
 
 C_DEFINES = -DDEBUG -DUSE_VTUNE
 
-C_INCLUDES = -I/home/zw9ga/cs6456/p2/exp2/. -I/data/intel/vtune_profiler/include -I/usr/local/include/glib-2.0 -I/usr/local/lib/x86_64-linux-gnu/glib-2.0/include 
+C_INCLUDES = -I/home/zw9ga/git/cs6456/p2/exp2/. -I/data/intel/vtune_profiler/include -I/usr/local/include/glib-2.0 -I/usr/local/lib/x86_64-linux-gnu/glib-2.0/include 
 

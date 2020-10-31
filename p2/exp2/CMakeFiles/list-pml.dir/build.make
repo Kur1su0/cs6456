@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zw9ga/cs6456/p2/exp2
+CMAKE_SOURCE_DIR = /home/zw9ga/git/cs6456/p2/exp2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zw9ga/cs6456/p2/exp2
+CMAKE_BINARY_DIR = /home/zw9ga/git/cs6456/p2/exp2
 
 # Include any dependencies generated for this target.
 include CMakeFiles/list-pml.dir/depend.make
@@ -59,55 +59,55 @@ include CMakeFiles/list-pml.dir/flags.make
 
 CMakeFiles/list-pml.dir/list.c.o: CMakeFiles/list-pml.dir/flags.make
 CMakeFiles/list-pml.dir/list.c.o: list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zw9ga/cs6456/p2/exp2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/list-pml.dir/list.c.o"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/list-pml.dir/list.c.o   -c /home/zw9ga/cs6456/p2/exp2/list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zw9ga/git/cs6456/p2/exp2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/list-pml.dir/list.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/list-pml.dir/list.c.o   -c /home/zw9ga/git/cs6456/p2/exp2/list.c
 
 CMakeFiles/list-pml.dir/list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/list-pml.dir/list.c.i"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zw9ga/cs6456/p2/exp2/list.c > CMakeFiles/list-pml.dir/list.c.i
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zw9ga/git/cs6456/p2/exp2/list.c > CMakeFiles/list-pml.dir/list.c.i
 
 CMakeFiles/list-pml.dir/list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/list-pml.dir/list.c.s"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zw9ga/cs6456/p2/exp2/list.c -o CMakeFiles/list-pml.dir/list.c.s
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zw9ga/git/cs6456/p2/exp2/list.c -o CMakeFiles/list-pml.dir/list.c.s
 
 CMakeFiles/list-pml.dir/SortedList.c.o: CMakeFiles/list-pml.dir/flags.make
 CMakeFiles/list-pml.dir/SortedList.c.o: SortedList.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zw9ga/cs6456/p2/exp2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/list-pml.dir/SortedList.c.o"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/list-pml.dir/SortedList.c.o   -c /home/zw9ga/cs6456/p2/exp2/SortedList.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zw9ga/git/cs6456/p2/exp2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/list-pml.dir/SortedList.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/list-pml.dir/SortedList.c.o   -c /home/zw9ga/git/cs6456/p2/exp2/SortedList.c
 
 CMakeFiles/list-pml.dir/SortedList.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/list-pml.dir/SortedList.c.i"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zw9ga/cs6456/p2/exp2/SortedList.c > CMakeFiles/list-pml.dir/SortedList.c.i
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zw9ga/git/cs6456/p2/exp2/SortedList.c > CMakeFiles/list-pml.dir/SortedList.c.i
 
 CMakeFiles/list-pml.dir/SortedList.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/list-pml.dir/SortedList.c.s"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zw9ga/cs6456/p2/exp2/SortedList.c -o CMakeFiles/list-pml.dir/SortedList.c.s
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zw9ga/git/cs6456/p2/exp2/SortedList.c -o CMakeFiles/list-pml.dir/SortedList.c.s
 
 CMakeFiles/list-pml.dir/common.c.o: CMakeFiles/list-pml.dir/flags.make
 CMakeFiles/list-pml.dir/common.c.o: common.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zw9ga/cs6456/p2/exp2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/list-pml.dir/common.c.o"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/list-pml.dir/common.c.o   -c /home/zw9ga/cs6456/p2/exp2/common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zw9ga/git/cs6456/p2/exp2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/list-pml.dir/common.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/list-pml.dir/common.c.o   -c /home/zw9ga/git/cs6456/p2/exp2/common.c
 
 CMakeFiles/list-pml.dir/common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/list-pml.dir/common.c.i"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zw9ga/cs6456/p2/exp2/common.c > CMakeFiles/list-pml.dir/common.c.i
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zw9ga/git/cs6456/p2/exp2/common.c > CMakeFiles/list-pml.dir/common.c.i
 
 CMakeFiles/list-pml.dir/common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/list-pml.dir/common.c.s"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zw9ga/cs6456/p2/exp2/common.c -o CMakeFiles/list-pml.dir/common.c.s
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zw9ga/git/cs6456/p2/exp2/common.c -o CMakeFiles/list-pml.dir/common.c.s
 
 CMakeFiles/list-pml.dir/measure.c.o: CMakeFiles/list-pml.dir/flags.make
 CMakeFiles/list-pml.dir/measure.c.o: measure.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zw9ga/cs6456/p2/exp2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/list-pml.dir/measure.c.o"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/list-pml.dir/measure.c.o   -c /home/zw9ga/cs6456/p2/exp2/measure.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zw9ga/git/cs6456/p2/exp2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/list-pml.dir/measure.c.o"
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/list-pml.dir/measure.c.o   -c /home/zw9ga/git/cs6456/p2/exp2/measure.c
 
 CMakeFiles/list-pml.dir/measure.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/list-pml.dir/measure.c.i"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zw9ga/cs6456/p2/exp2/measure.c > CMakeFiles/list-pml.dir/measure.c.i
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zw9ga/git/cs6456/p2/exp2/measure.c > CMakeFiles/list-pml.dir/measure.c.i
 
 CMakeFiles/list-pml.dir/measure.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/list-pml.dir/measure.c.s"
-	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zw9ga/cs6456/p2/exp2/measure.c -o CMakeFiles/list-pml.dir/measure.c.s
+	gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zw9ga/git/cs6456/p2/exp2/measure.c -o CMakeFiles/list-pml.dir/measure.c.s
 
 # Object files for target list-pml
 list__pml_OBJECTS = \
@@ -126,7 +126,7 @@ list-pml: CMakeFiles/list-pml.dir/measure.c.o
 list-pml: CMakeFiles/list-pml.dir/build.make
 list-pml: /data/intel/vtune_profiler/lib64/libittnotify.a
 list-pml: CMakeFiles/list-pml.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zw9ga/cs6456/p2/exp2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable list-pml"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zw9ga/git/cs6456/p2/exp2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable list-pml"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/list-pml.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -139,6 +139,6 @@ CMakeFiles/list-pml.dir/clean:
 .PHONY : CMakeFiles/list-pml.dir/clean
 
 CMakeFiles/list-pml.dir/depend:
-	cd /home/zw9ga/cs6456/p2/exp2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zw9ga/cs6456/p2/exp2 /home/zw9ga/cs6456/p2/exp2 /home/zw9ga/cs6456/p2/exp2 /home/zw9ga/cs6456/p2/exp2 /home/zw9ga/cs6456/p2/exp2/CMakeFiles/list-pml.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zw9ga/git/cs6456/p2/exp2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zw9ga/git/cs6456/p2/exp2 /home/zw9ga/git/cs6456/p2/exp2 /home/zw9ga/git/cs6456/p2/exp2 /home/zw9ga/git/cs6456/p2/exp2 /home/zw9ga/git/cs6456/p2/exp2/CMakeFiles/list-pml.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/list-pml.dir/depend
 

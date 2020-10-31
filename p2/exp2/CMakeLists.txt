@@ -121,7 +121,6 @@ link_directories(${GLIB_LIBRARY_DIRS})
 
 add_executable(list-hash
   hash.c
-  helper.c
   ${COMMON_SOURCES}
 )
 add_definitions(${GLIB_CFLAGS_OTHER})

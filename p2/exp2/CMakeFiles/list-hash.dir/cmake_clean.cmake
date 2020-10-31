@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/list-hash.dir/SortedList.c.o"
   "CMakeFiles/list-hash.dir/common.c.o"
   "CMakeFiles/list-hash.dir/hash.c.o"
-  "CMakeFiles/list-hash.dir/helper.c.o"
   "CMakeFiles/list-hash.dir/measure.c.o"
   "list-hash"
   "list-hash.pdb"

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zw9ga/cs6456/p2/exp2
+CMAKE_SOURCE_DIR = /home/zw9ga/git/cs6456/p2/exp2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zw9ga/cs6456/p2/exp2
+CMAKE_BINARY_DIR = /home/zw9ga/git/cs6456/p2/exp2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zw9ga/cs6456/p2/exp2/CMakeFiles /home/zw9ga/cs6456/p2/exp2/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zw9ga/git/cs6456/p2/exp2/CMakeFiles /home/zw9ga/git/cs6456/p2/exp2/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zw9ga/cs6456/p2/exp2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zw9ga/git/cs6456/p2/exp2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -318,33 +318,6 @@ hash.c.s:
 	$(MAKE) -f CMakeFiles/list-hash.dir/build.make CMakeFiles/list-hash.dir/hash.c.s
 .PHONY : hash.c.s
 
-helper.o: helper.c.o
-
-.PHONY : helper.o
-
-# target to build an object file
-helper.c.o:
-	$(MAKE) -f CMakeFiles/list-hash.dir/build.make CMakeFiles/list-hash.dir/helper.c.o
-.PHONY : helper.c.o
-
-helper.i: helper.c.i
-
-.PHONY : helper.i
-
-# target to preprocess a source file
-helper.c.i:
-	$(MAKE) -f CMakeFiles/list-hash.dir/build.make CMakeFiles/list-hash.dir/helper.c.i
-.PHONY : helper.c.i
-
-helper.s: helper.c.s
-
-.PHONY : helper.s
-
-# target to generate assembly for a file
-helper.c.s:
-	$(MAKE) -f CMakeFiles/list-hash.dir/build.make CMakeFiles/list-hash.dir/helper.c.s
-.PHONY : helper.c.s
-
 list.o: list.c.o
 
 .PHONY : list.o
@@ -456,9 +429,6 @@ help:
 	@echo "... hash.o"
 	@echo "... hash.i"
 	@echo "... hash.s"
-	@echo "... helper.o"
-	@echo "... helper.i"
-	@echo "... helper.s"
 	@echo "... list.o"
 	@echo "... list.i"
 	@echo "... list.s"

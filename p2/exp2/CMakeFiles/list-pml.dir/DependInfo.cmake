@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/zw9ga/cs6456/p2/exp2/SortedList.c" "/home/zw9ga/cs6456/p2/exp2/CMakeFiles/list-pml.dir/SortedList.c.o"
-  "/home/zw9ga/cs6456/p2/exp2/common.c" "/home/zw9ga/cs6456/p2/exp2/CMakeFiles/list-pml.dir/common.c.o"
-  "/home/zw9ga/cs6456/p2/exp2/list.c" "/home/zw9ga/cs6456/p2/exp2/CMakeFiles/list-pml.dir/list.c.o"
-  "/home/zw9ga/cs6456/p2/exp2/measure.c" "/home/zw9ga/cs6456/p2/exp2/CMakeFiles/list-pml.dir/measure.c.o"
+  "/home/zw9ga/git/cs6456/p2/exp2/SortedList.c" "/home/zw9ga/git/cs6456/p2/exp2/CMakeFiles/list-pml.dir/SortedList.c.o"
+  "/home/zw9ga/git/cs6456/p2/exp2/common.c" "/home/zw9ga/git/cs6456/p2/exp2/CMakeFiles/list-pml.dir/common.c.o"
+  "/home/zw9ga/git/cs6456/p2/exp2/list.c" "/home/zw9ga/git/cs6456/p2/exp2/CMakeFiles/list-pml.dir/list.c.o"
+  "/home/zw9ga/git/cs6456/p2/exp2/measure.c" "/home/zw9ga/git/cs6456/p2/exp2/CMakeFiles/list-pml.dir/measure.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
