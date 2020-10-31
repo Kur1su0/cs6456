@@ -53,7 +53,7 @@ run_hash() {
 
   #for tr in 1 2
   do 
-    $VTUNE $PROG --iterations=$ITER  --threads=$tr 1000 >> $TRACEFILE 2>&1   
+    $VTUNE $PROG --iterations=$ITER  --threads=$tr 700 >> $TRACEFILE 2>&1   
   done
   
   cat $TRACEFILE | grep "test="

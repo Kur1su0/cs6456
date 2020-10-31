@@ -31,7 +31,7 @@ run() {
     $VTUNE $PROG --iterations=$ITER  --threads=$tr --parts=`expr $tr \* $FACTOR` >> $TRACEFILE 2>&1   
   done
   
-  cat $TRACEFILE | grep "test="
+  cat $TRACEFILE | grep "verifi\|test="
 }
 
 
@@ -54,10 +54,10 @@ run_hash() {
   #for tr in 1 2
   do
 	  echo "thr=$tr"
-    $VTUNE $PROG --iterations=$ITER  --threads=$tr 1000 >> $TRACEFILE 2>&1   
+    $VTUNE $PROG --iterations=$ITER  --threads=$tr 750 >> $TRACEFILE 2>&1   
   done
   
-  cat $TRACEFILE | grep "test="
+  cat $TRACEFILE | grep "verifi\|test="
 }
 
 
@@ -117,7 +117,7 @@ run_hash_big_table() {
 #####################
 #run-hash
 run_hash "./list-hash" "trace-hash.txt" 1
-run_hash_big_table "./list-hash" "trace-hash_big.txt" 1
+#run_hash_big_table "./list-hash" "trace-hash_big.txt" 1
 
 
 

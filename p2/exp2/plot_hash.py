@@ -74,8 +74,8 @@ progs = [
 
 # corresponding to the progs above
 legend_names = [
-	"-hash (biglock)",
-        "-hash (big table with 1000 hashtable)"
+        "-hash (big table with 1000 hashtable)",
+	"-hash (biglock)"
 ]
 
 for progid, prog in enumerate(progs):
