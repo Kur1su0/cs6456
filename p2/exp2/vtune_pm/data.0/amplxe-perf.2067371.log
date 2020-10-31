@@ -1,0 +1,13 @@
+Using CPUID GenuineIntel-6-4F-1
+Compression enabled, disabling build id collection at the end of the session.
+nr_cblocks: 0
+affinity: SYS
+mmap flush: 1
+comp level: 1
+mmap size 528384B
+thread 0 monitor: 0-39 allowed: any
+cmd_pipe: /tmp/amplxe-tmp-zw9ga/perf-pipe-2067365-10712057058834264
+
+2067372:perf-sync:ready:SYS=4873580437699385
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.019 MB /home/zw9ga/git/cs6456/p2/exp2/r000hs/data.0/temp.dryrun.perf, compressed (original 0.002 MB, ratio is 2.632) ]
