@@ -1,0 +1,588 @@
+diff --git a/hello_world/host/main.c b/home/zw9ga/git/cs6456/p3/p3-exp2-3/host/main.c
+index 378082b..fdd4780 100644
+--- a/hello_world/host/main.c
++++ b/home/zw9ga/git/cs6456/p3/p3-exp2-3/host/main.c
+@@ -24,6 +24,7 @@
+  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  * POSSIBILITY OF SUCH DAMAGE.
+  */
++#include <stdlib.h>
+ 
+ #include <err.h>
+ #include <stdio.h>
+@@ -35,30 +36,167 @@
+ /* To the the UUID (found the the TA's h-file(s)) */
+ #include <hello_world_ta.h>
+ 
++/* TEE resources */
++struct test_ctx {
++	TEEC_Context ctx;
++	TEEC_Session sess;
++};
++
++TEEC_Result read_secure_object(TEEC_Session *sess, char *id,
++			char *data, size_t data_len)
++{
++	TEEC_Operation op;
++	uint32_t origin;
++	TEEC_Result res;
++	size_t id_len = strlen(id);
++
++	memset(&op, 0, sizeof(op));
++	op.paramTypes = TEEC_PARAM_TYPES(TEEC_MEMREF_TEMP_INPUT,
++					 TEEC_MEMREF_TEMP_OUTPUT,
++					 TEEC_NONE, TEEC_NONE);
++
++	op.params[0].tmpref.buffer = id;
++	op.params[0].tmpref.size = id_len;
++
++	op.params[1].tmpref.buffer = data;
++	op.params[1].tmpref.size = data_len;
++
++	res = TEEC_InvokeCommand(sess,
++				 TA_SECURE_STORAGE_CMD_READ_RAW,
++				 &op, &origin);
++	switch (res) {
++	case TEEC_SUCCESS:
++		printf("GetVal: %s\n",(char*)op.params[1].tmpref.buffer);
++
++	case TEEC_ERROR_SHORT_BUFFER:
++	case TEEC_ERROR_ITEM_NOT_FOUND:
++		break;
++	default:
++		printf("Command READ_RAW failed: 0x%x / %u\n", res, origin);
++	}
++
++	return res;
++}
++
++TEEC_Result write_secure_object(TEEC_Session *sess, char *id,
++			char *data, size_t data_len)
++{
++	printf("SetVal:%s\n",data);
++	TEEC_Operation op;
++	uint32_t origin;
++	TEEC_Result res;
++	size_t id_len = strlen(id);
++
++	memset(&op, 0, sizeof(op));
++	op.paramTypes = TEEC_PARAM_TYPES(TEEC_MEMREF_TEMP_INPUT,
++					 TEEC_MEMREF_TEMP_INPUT,
++					 TEEC_NONE, TEEC_NONE);
++
++	op.params[0].tmpref.buffer = id;
++	op.params[0].tmpref.size = id_len;
++
++	op.params[1].tmpref.buffer = data;
++	op.params[1].tmpref.size = data_len;
++
++	res = TEEC_InvokeCommand(sess,
++				 TA_SECURE_STORAGE_CMD_WRITE_RAW,
++				 &op, &origin);
++	if (res != TEEC_SUCCESS)
++		printf("Command WRITE_RAW failed: 0x%x / %u\n", res, origin);
++
++	switch (res) {
++	case TEEC_SUCCESS:
++		break;
++	default:
++		printf("Command WRITE_RAW failed: 0x%x / %u\n", res, origin);
++	}
++	return res;
++}
++
++TEEC_Result delete_secure_object(TEEC_Session *sess, char *id)
++{
++	TEEC_Operation op;
++	uint32_t origin;
++	TEEC_Result res;
++	size_t id_len = strlen(id);
++
++	memset(&op, 0, sizeof(op));
++	op.paramTypes = TEEC_PARAM_TYPES(TEEC_MEMREF_TEMP_INPUT,
++					 TEEC_NONE, TEEC_NONE, TEEC_NONE);
++
++	op.params[0].tmpref.buffer = id;
++	op.params[0].tmpref.size = id_len;
++
++	res = TEEC_InvokeCommand(sess,
++				 TA_SECURE_STORAGE_CMD_DELETE,
++				 &op, &origin);
++
++	switch (res) {
++	case TEEC_SUCCESS:
++	case TEEC_ERROR_ITEM_NOT_FOUND:
++		break;
++	default:
++		printf("Command DELETE failed: 0x%x / %u\n", res, origin);
++	}
++
++	return res;
++}
++
++#define TEST_OBJECT_SIZE	7000
++
++
++
++
++
++
++
++
++
++
++
++//---------------------------------
+ int main(void)
+ {
+ 	TEEC_Result res;
+-	TEEC_Context ctx;
+-	TEEC_Session sess;
++	TEEC_Context ctx,ctx2;
++	//int MAX_NUM=1021;
++	//TEEC_Result res_array[MAX_NUM];
++	//TEEC_Context ctx_array[MAX_NUM];
++
++	//test_ctx *ctx_sess;
++	TEEC_Session sess,sess2,sess3;
+ 	TEEC_Operation op;
+ 	TEEC_UUID uuid = TA_HELLO_WORLD_UUID;
+ 	uint32_t err_origin;
++	
++	char obj1_id[] = "object#1";		/* string identification for the object */
++	char obj2_id[] = "object#2";		/* string identification for the object */
++	char obj1_data[TEST_OBJECT_SIZE];
++	char read_data[TEST_OBJECT_SIZE];
+ 
+ 	/* Initialize a context connecting us to the TEE */
++	printf("context 1 init\n");
+ 	res = TEEC_InitializeContext(NULL, &ctx);
+ 	if (res != TEEC_SUCCESS)
+ 		errx(1, "TEEC_InitializeContext failed with code 0x%x", res);
+ 
++	//for(int i=0;i<MAX_NUM;i++){
++//
++//		res_array[i] = TEEC_InitializeContext(NULL, &ctx_array[i]);
++//		if (res_array[i] != TEEC_SUCCESS)
++//			errx(1, "TEEC_InitializeContext failed with code 0x%x, num:%d", res_array[i],i);
++//
++//	}
+ 	/*
+ 	 * Open a session to the "hello world" TA, the TA will print "hello
+ 	 * world!" in the log when the session is created.
+ 	 */
+-	res = TEEC_OpenSession(&ctx, &sess, &uuid,
++	printf("context 1 session 1 init\n");
++		res = TEEC_OpenSession(&ctx, &sess, &uuid,
+ 			       TEEC_LOGIN_PUBLIC, NULL, NULL, &err_origin);
+ 	if (res != TEEC_SUCCESS)
+ 		errx(1, "TEEC_Opensession failed with code 0x%x origin 0x%x",
+ 			res, err_origin);
+-
+ 	/*
+ 	 * Execute a function in the TA by invoking it, in this case
+ 	 * we're incrementing a number.
+@@ -68,27 +206,49 @@ int main(void)
+ 	 */
+ 
+ 	/* Clear the TEEC_Operation struct */
+-	memset(&op, 0, sizeof(op));
+ 
++
++	sprintf(obj1_data, "%d", 20);
++	res = write_secure_object(&sess, obj1_id,
++				  obj1_data, sizeof(obj1_data));
++	if (res != TEEC_SUCCESS)
++		errx(1, "Failed to create an object in the secure storage");
++
++	//------------------------
+ 	/*
+ 	 * Prepare the argument. Pass a value in the first parameter,
+ 	 * the remaining three parameters are unused.
+ 	 */
++	memset(&op, 0, sizeof(op));
+ 	op.paramTypes = TEEC_PARAM_TYPES(TEEC_VALUE_INOUT, TEEC_NONE,
+ 					 TEEC_NONE, TEEC_NONE);
+-	op.params[0].value.a = 42;
++	op.params[0].value.a = 20;
+ 
+ 	/*
+ 	 * TA_HELLO_WORLD_CMD_INC_VALUE is the actual function in the TA to be
+ 	 * called.
+ 	 */
+ 	printf("Invoking TA to increment %d\n", op.params[0].value.a);
+-	res = TEEC_InvokeCommand(&sess, TA_HELLO_WORLD_CMD_INC_VALUE, &op,
+-				 &err_origin);
+-	if (res != TEEC_SUCCESS)
+-		errx(1, "TEEC_InvokeCommand failed with code 0x%x origin 0x%x",
+-			res, err_origin);
++	//printf("hello! ... Invoking TA to increment %d\n", op.params[0].value.a);
++	//res = TEEC_InvokeCommand(&sess, TA_HELLO_WORLD_CMD_INC_VALUE, &op,
++	//			 &err_origin);
++	res = TEEC_InvokeCommand(&sess, TA_HELLO_WORLD_CMD_INC_VALUE, &op, &err_origin);
++	//res = TEEC_InvokeCommand(&sess, TA_HELLO_WORLD_CMD_DEC_VALUE, &op, &err_origin);
++	if (res != TEEC_SUCCESS){
++		if(res == TEEC_ERROR_CANCEL){
++			errx(1,"CA get error with code 0x%x origin 0x%x: not [1,100]",res,err_origin);
++		}else
++			errx(1, "TEEC_InvokeCommand failed with code 0x%x origin 0x%x",
++				res, err_origin);
++	
++
++
++	} else
+ 	printf("TA incremented value to %d\n", op.params[0].value.a);
++	
++	printf("Context 1 Session 1 closed\n");
++	TEEC_CloseSession(&sess);
++	
+ 
+ 	/*
+ 	 * We're done with the TA, close the session and
+@@ -98,9 +258,58 @@ int main(void)
+ 	 * session is closed.
+ 	 */
+ 
+-	TEEC_CloseSession(&sess);
++	printf("Context 1 Session 2 init\n");
++		res = TEEC_OpenSession(&ctx, &sess2, &uuid,
++			       TEEC_LOGIN_PUBLIC, NULL, NULL, &err_origin);
++	if (res != TEEC_SUCCESS)
++		errx(1, "TEEC_Opensession failed with code 0x%x origin 0x%x",
++			res, err_origin);
++	res = read_secure_object(&sess, obj1_id,
++				 read_data, sizeof(read_data));
++
++	if (res != TEEC_SUCCESS)
++		errx(1, "Failed to read an object from the secure storage");
++	if (memcmp(obj1_data, read_data, sizeof(obj1_data)))
++		errx(1, "Unexpected content found in secure storage");
+ 
++
++	printf("close Context 1 & Session2");
++	TEEC_CloseSession(&sess2);
+ 	TEEC_FinalizeContext(&ctx);
+ 
++
++	printf("context 2 init\n");
++	res = TEEC_InitializeContext(NULL, &ctx2);
++	if (res != TEEC_SUCCESS)
++		errx(1, "TEEC_InitializeContext failed with code 0x%x", res);
++	
++	printf("context 2 session 1 init\n");
++		res = TEEC_OpenSession(&ctx2, &sess3, &uuid,
++			       TEEC_LOGIN_PUBLIC, NULL, NULL, &err_origin);
++	if (res != TEEC_SUCCESS)
++		errx(1, "TEEC_Opensession failed with code 0x%x origin 0x%x",
++			res, err_origin);
++
++	res = read_secure_object(&sess3, obj1_id,
++				 read_data, sizeof(read_data));
++
++	if (res != TEEC_SUCCESS)
++		errx(1, "Failed to read an object from the secure storage");
++	if (memcmp(obj1_data, read_data, sizeof(obj1_data)))
++		errx(1, "Unexpected content found in secure storage");
++
++
++	res = delete_secure_object(&sess3, obj1_id);
++	if (res != TEEC_SUCCESS)
++		errx(1, "Failed to delete the object: 0x%x", res);
++
++	printf("close Context 2 & Session\n");
++	TEEC_CloseSession(&sess2);
++	TEEC_FinalizeContext(&ctx2);
++
++
++
++
++
+ 	return 0;
+ }
+diff --git a/hello_world/ta/Makefile b/home/zw9ga/git/cs6456/p3/p3-exp2-3/ta/Makefile
+index 3d2e6fc..7cba566 100644
+--- a/hello_world/ta/Makefile
++++ b/home/zw9ga/git/cs6456/p3/p3-exp2-3/ta/Makefile
+@@ -1,4 +1,4 @@
+-CFG_TEE_TA_LOG_LEVEL ?= 4
++CFG_TEE_TA_LOG_LEVEL := 4 #?=4
+ CPPFLAGS += -DCFG_TEE_TA_LOG_LEVEL=$(CFG_TEE_TA_LOG_LEVEL)
+ 
+ # The UUID for the Trusted Application
+diff --git a/hello_world/ta/hello_world_ta.c b/home/zw9ga/git/cs6456/p3/p3-exp2-3/ta/hello_world_ta.c
+index 2423b30..6d963c8 100644
+--- a/hello_world/ta/hello_world_ta.c
++++ b/home/zw9ga/git/cs6456/p3/p3-exp2-3/ta/hello_world_ta.c
+@@ -27,6 +27,7 @@
+ 
+ #include <tee_internal_api.h>
+ #include <tee_internal_api_extensions.h>
++#include <inttypes.h>
+ 
+ #include <hello_world_ta.h>
+ 
+@@ -109,6 +110,13 @@ static TEE_Result inc_value(uint32_t param_types,
+ 
+ 	IMSG("Got value: %u from NW", params[0].value.a);
+ 	params[0].value.a++;
++	//params[0].value.a+=2;
++	if(params[0].value.a > 100){
++		DMSG("ERROR: not [1,100] - cur val: %u",params[0].value.a);
++		return TEE_ERROR_CANCEL;
++	}
++	//params[0].value.a+=2;
++	//params[0].value.a+=2;
+ 	IMSG("Increase value to: %u", params[0].value.a);
+ 
+ 	return TEE_SUCCESS;
+@@ -129,10 +137,216 @@ static TEE_Result dec_value(uint32_t param_types,
+ 
+ 	IMSG("Got value: %u from NW", params[0].value.a);
+ 	params[0].value.a--;
++	if(params[0].value.a > 100){
++		DMSG("not [1,100] - cur val: %u",params[0].value.a);
++		return TEE_ERROR_CANCEL;
++	}
+ 	IMSG("Decrease value to: %u", params[0].value.a);
+ 
+ 	return TEE_SUCCESS;
+ }
++//-----------------------------------------------------------
++
++static TEE_Result delete_object(uint32_t param_types, TEE_Param params[4])
++{
++	const uint32_t exp_param_types =
++		TEE_PARAM_TYPES(TEE_PARAM_TYPE_MEMREF_INPUT,
++				TEE_PARAM_TYPE_NONE,
++				TEE_PARAM_TYPE_NONE,
++				TEE_PARAM_TYPE_NONE);
++	TEE_ObjectHandle object;
++	TEE_Result res;
++	char *obj_id;
++	size_t obj_id_sz;
++
++	/*
++	 * Safely get the invocation parameters
++	 */
++	if (param_types != exp_param_types)
++		return TEE_ERROR_BAD_PARAMETERS;
++
++	obj_id_sz = params[0].memref.size;
++	obj_id = TEE_Malloc(obj_id_sz, 0);
++	if (!obj_id)
++		return TEE_ERROR_OUT_OF_MEMORY;
++
++	TEE_MemMove(obj_id, params[0].memref.buffer, obj_id_sz);
++
++	/*
++	 * Check object exists and delete it
++	 */
++	res = TEE_OpenPersistentObject(TEE_STORAGE_PRIVATE,
++					obj_id, obj_id_sz,
++					TEE_DATA_FLAG_ACCESS_READ |
++					TEE_DATA_FLAG_ACCESS_WRITE_META, /* we must be allowed to delete it */
++					&object);
++	if (res != TEE_SUCCESS) {
++		EMSG("Failed to open persistent object, res=0x%08x", res);
++		TEE_Free(obj_id);
++		return res;
++	}
++
++	TEE_CloseAndDeletePersistentObject1(object);
++	TEE_Free(obj_id);
++
++	return res;
++}
++
++static TEE_Result SetVal(uint32_t param_types, TEE_Param params[4])
++{
++	const uint32_t exp_param_types =
++		TEE_PARAM_TYPES(TEE_PARAM_TYPE_MEMREF_INPUT,
++				TEE_PARAM_TYPE_MEMREF_INPUT,
++				TEE_PARAM_TYPE_NONE,
++				TEE_PARAM_TYPE_NONE);
++	TEE_ObjectHandle object;
++	TEE_Result res;
++	char *obj_id;
++	size_t obj_id_sz;
++	char *data;
++	size_t data_sz;
++	uint32_t obj_data_flag;
++
++	/*
++	 * Safely get the invocation parameters
++	 */
++	if (param_types != exp_param_types)
++		return TEE_ERROR_BAD_PARAMETERS;
++
++	obj_id_sz = params[0].memref.size;
++	obj_id = TEE_Malloc(obj_id_sz, 0);
++	if (!obj_id)
++		return TEE_ERROR_OUT_OF_MEMORY;
++
++	TEE_MemMove(obj_id, params[0].memref.buffer, obj_id_sz);
++
++	data = (char *)params[1].memref.buffer;
++	data_sz = params[1].memref.size;
++
++	/*
++	 * Create object in secure storage and fill with data
++	 */
++	obj_data_flag = TEE_DATA_FLAG_ACCESS_READ |		/* we can later read the oject */
++			TEE_DATA_FLAG_ACCESS_WRITE |		/* we can later write into the object */
++			TEE_DATA_FLAG_ACCESS_WRITE_META |	/* we can later destroy or rename the object */
++			TEE_DATA_FLAG_OVERWRITE;		/* destroy existing object of same ID */
++
++	res = TEE_CreatePersistentObject(TEE_STORAGE_PRIVATE,
++					obj_id, obj_id_sz,
++					obj_data_flag,
++					TEE_HANDLE_NULL,
++					NULL, 0,		/* we may not fill it right now */
++					&object);
++	if (res != TEE_SUCCESS) {
++		EMSG("TEE_CreatePersistentObject failed 0x%08x", res);
++		TEE_Free(obj_id);
++		return res;
++	}
++
++	res = TEE_WriteObjectData(object, data, data_sz);
++	if (res != TEE_SUCCESS) {
++		EMSG("TEE_WriteObjectData failed 0x%08x", res);
++		TEE_CloseAndDeletePersistentObject1(object);
++	} else {
++		EMSG("---------------------SetVal-----------", data);
++		TEE_CloseObject(object);
++	}
++	TEE_Free(obj_id);
++	return res;
++}
++
++static TEE_Result GetVal(uint32_t param_types, TEE_Param params[4])
++{
++	const uint32_t exp_param_types =
++		TEE_PARAM_TYPES(TEE_PARAM_TYPE_MEMREF_INPUT,
++				TEE_PARAM_TYPE_MEMREF_OUTPUT,
++				TEE_PARAM_TYPE_NONE,
++				TEE_PARAM_TYPE_NONE);
++	TEE_ObjectHandle object;
++	TEE_ObjectInfo object_info;
++	TEE_Result res;
++	uint32_t read_bytes;
++	char *obj_id;
++	size_t obj_id_sz;
++	char *data;
++	size_t data_sz;
++
++	/*
++	 * Safely get the invocation parameters
++	 */
++	if (param_types != exp_param_types)
++		return TEE_ERROR_BAD_PARAMETERS;
++
++	obj_id_sz = params[0].memref.size;
++	obj_id = TEE_Malloc(obj_id_sz, 0);
++	if (!obj_id)
++		return TEE_ERROR_OUT_OF_MEMORY;
++
++	TEE_MemMove(obj_id, params[0].memref.buffer, obj_id_sz);
++
++	data = (char *)params[1].memref.buffer;
++	data_sz = params[1].memref.size;
++
++	/*
++	 * Check the object exist and can be dumped into output buffer
++	 * then dump it.
++	 */
++	res = TEE_OpenPersistentObject(TEE_STORAGE_PRIVATE,
++					obj_id, obj_id_sz,
++					TEE_DATA_FLAG_ACCESS_READ |
++					TEE_DATA_FLAG_SHARE_READ,
++					&object);
++	if (res != TEE_SUCCESS) {
++		EMSG("Failed to open persistent object, res=0x%08x", res);
++		TEE_Free(obj_id);
++		return res;
++	}
++
++	res = TEE_GetObjectInfo1(object, &object_info);
++	if (res != TEE_SUCCESS) {
++		EMSG("Failed to create persistent object, res=0x%08x", res);
++		goto exit;
++	}
++
++	if (object_info.dataSize > data_sz) {
++		/*
++		 * Provided buffer is too short.
++		 * Return the expected size together with status "short buffer"
++		 */
++		params[1].memref.size = object_info.dataSize;
++		res = TEE_ERROR_SHORT_BUFFER;
++		goto exit;
++	}
++
++	res = TEE_ReadObjectData(object, data, object_info.dataSize,
++				 &read_bytes);
++	if (res != TEE_SUCCESS || read_bytes != object_info.dataSize) {
++		EMSG("TEE_ReadObjectData failed 0x%08x, read %" PRIu32 " over %u",
++				res, read_bytes, object_info.dataSize);
++		goto exit;
++	}
++
++	/* Return the number of byte effectively filled */
++	params[1].memref.size = read_bytes;
++	EMSG("------------GetVal:%s-------------------",data);
++exit:
++	TEE_CloseObject(object);
++	TEE_Free(obj_id);
++	return res;
++}
++
++
++
++
++
++
++
++
++
++
++
++
++
+ /*
+  * Called when a TA is invoked. sess_ctx hold that value that was
+  * assigned by TA_OpenSessionEntryPoint(). The rest of the paramters
+@@ -142,13 +356,19 @@ TEE_Result TA_InvokeCommandEntryPoint(void __maybe_unused *sess_ctx,
+ 			uint32_t cmd_id,
+ 			uint32_t param_types, TEE_Param params[4])
+ {
+-	(void)&sess_ctx; /* Unused parameter */
++	//(void)&sess_ctx; /* Unused parameter */
+ 
+ 	switch (cmd_id) {
+ 	case TA_HELLO_WORLD_CMD_INC_VALUE:
+ 		return inc_value(param_types, params);
+ 	case TA_HELLO_WORLD_CMD_DEC_VALUE:
+ 		return dec_value(param_types, params);
++	case TA_SECURE_STORAGE_CMD_WRITE_RAW:
++		return SetVal(param_types, params);
++	case TA_SECURE_STORAGE_CMD_READ_RAW:
++		return GetVal(param_types, params);
++	case TA_SECURE_STORAGE_CMD_DELETE:
++		return delete_object(param_types, params);
+ 	default:
+ 		return TEE_ERROR_BAD_PARAMETERS;
+ 	}
+diff --git a/hello_world/ta/include/hello_world_ta.h b/home/zw9ga/git/cs6456/p3/p3-exp2-3/ta/include/hello_world_ta.h
+index 8e40276..a0f9566 100644
+--- a/hello_world/ta/include/hello_world_ta.h
++++ b/home/zw9ga/git/cs6456/p3/p3-exp2-3/ta/include/hello_world_ta.h
+@@ -40,4 +40,8 @@
+ #define TA_HELLO_WORLD_CMD_INC_VALUE		0
+ #define TA_HELLO_WORLD_CMD_DEC_VALUE		1
+ 
++#define TA_SECURE_STORAGE_CMD_READ_RAW		2
++#define TA_SECURE_STORAGE_CMD_WRITE_RAW		3
++#define TA_SECURE_STORAGE_CMD_DELETE		4
++
+ #endif /*TA_HELLO_WORLD_H*/

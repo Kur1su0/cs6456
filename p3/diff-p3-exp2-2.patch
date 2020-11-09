@@ -1,0 +1,123 @@
+diff --git a/hello_world/host/main.c b/home/zw9ga/git/cs6456/p3/p3-exp2-2/host/main.c
+index 378082b..67f88f2 100644
+--- a/hello_world/host/main.c
++++ b/home/zw9ga/git/cs6456/p3/p3-exp2-2/host/main.c
+@@ -24,6 +24,7 @@
+  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  * POSSIBILITY OF SUCH DAMAGE.
+  */
++#include <stdlib.h>
+ 
+ #include <err.h>
+ #include <stdio.h>
+@@ -39,6 +40,10 @@ int main(void)
+ {
+ 	TEEC_Result res;
+ 	TEEC_Context ctx;
++	//int MAX_NUM=1021;
++	//TEEC_Result res_array[MAX_NUM];
++	//TEEC_Context ctx_array[MAX_NUM];
++
+ 	TEEC_Session sess;
+ 	TEEC_Operation op;
+ 	TEEC_UUID uuid = TA_HELLO_WORLD_UUID;
+@@ -49,16 +54,23 @@ int main(void)
+ 	if (res != TEEC_SUCCESS)
+ 		errx(1, "TEEC_InitializeContext failed with code 0x%x", res);
+ 
++	//for(int i=0;i<MAX_NUM;i++){
++//
++//		res_array[i] = TEEC_InitializeContext(NULL, &ctx_array[i]);
++//		if (res_array[i] != TEEC_SUCCESS)
++//			errx(1, "TEEC_InitializeContext failed with code 0x%x, num:%d", res_array[i],i);
++//
++//	}
++	
+ 	/*
+ 	 * Open a session to the "hello world" TA, the TA will print "hello
+ 	 * world!" in the log when the session is created.
+ 	 */
+-	res = TEEC_OpenSession(&ctx, &sess, &uuid,
++		res = TEEC_OpenSession(&ctx, &sess, &uuid,
+ 			       TEEC_LOGIN_PUBLIC, NULL, NULL, &err_origin);
+ 	if (res != TEEC_SUCCESS)
+ 		errx(1, "TEEC_Opensession failed with code 0x%x origin 0x%x",
+ 			res, err_origin);
+-
+ 	/*
+ 	 * Execute a function in the TA by invoking it, in this case
+ 	 * we're incrementing a number.
+@@ -76,18 +88,28 @@ int main(void)
+ 	 */
+ 	op.paramTypes = TEEC_PARAM_TYPES(TEEC_VALUE_INOUT, TEEC_NONE,
+ 					 TEEC_NONE, TEEC_NONE);
+-	op.params[0].value.a = 42;
++	op.params[0].value.a = 200;
+ 
+ 	/*
+ 	 * TA_HELLO_WORLD_CMD_INC_VALUE is the actual function in the TA to be
+ 	 * called.
+ 	 */
+ 	printf("Invoking TA to increment %d\n", op.params[0].value.a);
+-	res = TEEC_InvokeCommand(&sess, TA_HELLO_WORLD_CMD_INC_VALUE, &op,
+-				 &err_origin);
+-	if (res != TEEC_SUCCESS)
+-		errx(1, "TEEC_InvokeCommand failed with code 0x%x origin 0x%x",
+-			res, err_origin);
++	//printf("hello! ... Invoking TA to increment %d\n", op.params[0].value.a);
++	//res = TEEC_InvokeCommand(&sess, TA_HELLO_WORLD_CMD_INC_VALUE, &op,
++	//			 &err_origin);
++	res = TEEC_InvokeCommand(&sess, TA_HELLO_WORLD_CMD_INC_VALUE, &op, &err_origin);
++	//res = TEEC_InvokeCommand(&sess, TA_HELLO_WORLD_CMD_DEC_VALUE, &op, &err_origin);
++	if (res != TEEC_SUCCESS){
++		if(res == TEEC_ERROR_CANCEL){
++			errx(1,"CA get error with code 0x%x origin 0x%x: not [1,100]",res,err_origin);
++		}else
++			errx(1, "TEEC_InvokeCommand failed with code 0x%x origin 0x%x",
++				res, err_origin);
++	
++
++
++	} else
+ 	printf("TA incremented value to %d\n", op.params[0].value.a);
+ 
+ 	/*
+diff --git a/hello_world/ta/Makefile b/home/zw9ga/git/cs6456/p3/p3-exp2-2/ta/Makefile
+index 3d2e6fc..7cba566 100644
+--- a/hello_world/ta/Makefile
++++ b/home/zw9ga/git/cs6456/p3/p3-exp2-2/ta/Makefile
+@@ -1,4 +1,4 @@
+-CFG_TEE_TA_LOG_LEVEL ?= 4
++CFG_TEE_TA_LOG_LEVEL := 4 #?=4
+ CPPFLAGS += -DCFG_TEE_TA_LOG_LEVEL=$(CFG_TEE_TA_LOG_LEVEL)
+ 
+ # The UUID for the Trusted Application
+diff --git a/hello_world/ta/hello_world_ta.c b/home/zw9ga/git/cs6456/p3/p3-exp2-2/ta/hello_world_ta.c
+index 2423b30..29bcdc5 100644
+--- a/hello_world/ta/hello_world_ta.c
++++ b/home/zw9ga/git/cs6456/p3/p3-exp2-2/ta/hello_world_ta.c
+@@ -109,6 +109,13 @@ static TEE_Result inc_value(uint32_t param_types,
+ 
+ 	IMSG("Got value: %u from NW", params[0].value.a);
+ 	params[0].value.a++;
++	//params[0].value.a+=2;
++	if(params[0].value.a > 100){
++		DMSG("ERROR: not [1,100] - cur val: %u",params[0].value.a);
++		return TEE_ERROR_CANCEL;
++	}
++	//params[0].value.a+=2;
++	//params[0].value.a+=2;
+ 	IMSG("Increase value to: %u", params[0].value.a);
+ 
+ 	return TEE_SUCCESS;
+@@ -129,6 +136,10 @@ static TEE_Result dec_value(uint32_t param_types,
+ 
+ 	IMSG("Got value: %u from NW", params[0].value.a);
+ 	params[0].value.a--;
++	if(params[0].value.a > 100){
++		DMSG("not [1,100] - cur val: %u",params[0].value.a);
++		return TEE_ERROR_CANCEL;
++	}
+ 	IMSG("Decrease value to: %u", params[0].value.a);
+ 
+ 	return TEE_SUCCESS;
