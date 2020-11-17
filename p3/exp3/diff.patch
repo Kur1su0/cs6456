@@ -1,0 +1,348 @@
+diff --git a/optee_test_orign/.git/index b/home/zw9ga/git/cs6456/p3/exp3/optee_test/.git/index
+index cad7d7e..ebac2a2 100644
+Binary files a/optee_test_orign/.git/index and b/home/zw9ga/git/cs6456/p3/exp3/optee_test/.git/index differ
+diff --git a/optee_test_orign/host/xtest/sdp_basic.c b/home/zw9ga/git/cs6456/p3/exp3/optee_test/host/xtest/sdp_basic.c
+index 5749714..e3dcd6d 100644
+--- a/optee_test_orign/host/xtest/sdp_basic.c
++++ b/home/zw9ga/git/cs6456/p3/exp3/optee_test/host/xtest/sdp_basic.c
+@@ -22,7 +22,9 @@
+ #include "xtest_test.h"
+ 
+ #include "include/uapi/linux/ion_old.h"
+-
++#include <sys/time.h>
++//#include <tee_internal_api_extensions.h> 
++#include <time.h>
+ /*
+  * SDP basic test setup overview.
+  *
+@@ -57,7 +59,14 @@ struct tee_ctx {
+ 	TEEC_Context ctx;
+ 	TEEC_Session sess;
+ };
+-
++struct measure{
++	clock_t start, end;
++	double cpu_time_used;
++};
++//#define SEPERATE 1
++#ifdef SEPERATE
++struct measure inj_time, trans_time, dump_time;
++#endif
+ /*
+  * Old ION API to allocate and export a buffer
+  */
+@@ -131,10 +140,11 @@ int allocate_ion_buffer(size_t size, int heap_type_id, int verbosity)
+ 				heap_type_id);
+ 		goto out;
+ 	}
+-
++/*
+ 	verbose("Allocate in ION heap '%s' (type=%u, id=%u)\n",
+ 		heap_data[idx].name, heap_data[idx].type,
+ 		heap_data[idx].heap_id);
++	*/
+ 
+ 	alloc_data.len = size;
+ 	alloc_data.flags = 0;
+@@ -261,11 +271,16 @@ static int inject_sdp_data(struct tee_ctx *ctx,
+ 	op.params[1].memref.parent = shm;
+ 	op.params[1].memref.size = len;
+ 	op.params[1].memref.offset = offset;
+-
++#ifdef SEPERATE
++	inj_time.start = clock();
++#endif
+ 	teerc = TEEC_InvokeCommand(&ctx->sess, cmd, &op, &err_origin);
+ 	if (teerc != TEEC_SUCCESS)
+ 		fprintf(stderr, "Error: invoke SDP test TA (inject) failed %x %d\n",
+ 			teerc, err_origin);
++#ifdef SEPERATE
++	inj_time.end = clock();
++#endif
+ 
+ 	return (teerc == TEEC_SUCCESS) ? 0 : -1;
+ }
+@@ -273,6 +288,7 @@ static int inject_sdp_data(struct tee_ctx *ctx,
+ static int transform_sdp_data(struct tee_ctx *ctx,
+ 			size_t offset, size_t len, void *shm_ref, int ind)
+ {
++	//printf("---trans---\n");
+ 	TEEC_SharedMemory *shm = (TEEC_SharedMemory *)shm_ref;
+ 	TEEC_Result teerc = TEEC_ERROR_GENERIC;
+ 	TEEC_Operation op = TEEC_OPERATION_INITIALIZER;
+@@ -302,10 +318,17 @@ static int transform_sdp_data(struct tee_ctx *ctx,
+ 	op.params[0].memref.size = len;
+ 	op.params[0].memref.offset = offset;
+ 
++#ifdef SEPERATE
++	trans_time.start = clock();
++#endif
++
+ 	teerc = TEEC_InvokeCommand(&ctx->sess, cmd, &op, &err_origin);
+ 	if (teerc != TEEC_SUCCESS)
+ 		fprintf(stderr, "Error: invoke SDP test TA (transform) failed %x %d\n",
+ 			teerc, err_origin);
++#ifdef SEPERATE
++	trans_time.end = clock();
++#endif
+ 
+ 	return (teerc == TEEC_SUCCESS) ? 0 : -1;
+ }
+@@ -313,6 +336,7 @@ static int transform_sdp_data(struct tee_ctx *ctx,
+ static int dump_sdp_data(struct tee_ctx *ctx,
+ 		  void *out, size_t offset, size_t len, void *shm_ref, int ind)
+ {
++	//printf("---dump---\n");
+ 	TEEC_SharedMemory *shm = (TEEC_SharedMemory *)shm_ref;
+ 	TEEC_Result teerc = TEEC_ERROR_GENERIC;
+ 	TEEC_Operation op = TEEC_OPERATION_INITIALIZER;
+@@ -336,6 +360,7 @@ static int dump_sdp_data(struct tee_ctx *ctx,
+ 		return -1;
+ 	}
+ 
++//idefine TA_STACK_SIZE		(2 * 1024)
+ 	op.paramTypes = TEEC_PARAM_TYPES(TEEC_MEMREF_PARTIAL_INPUT,
+ 					 TEEC_MEMREF_TEMP_OUTPUT,
+ 					 TEEC_NONE, TEEC_NONE);
+@@ -345,28 +370,32 @@ static int dump_sdp_data(struct tee_ctx *ctx,
+ 
+ 	op.params[1].tmpref.buffer = out;
+ 	op.params[1].tmpref.size = len;
+-
++#ifdef SEPERATE
++	dump_time.start = clock();
++#endif
+ 	teerc = TEEC_InvokeCommand(&ctx->sess, cmd, &op, &err_origin);
+ 	if (teerc != TEEC_SUCCESS)
+ 		fprintf(stderr, "Error: invoke SDP test TA (dump) failed %x %d\n",
+ 			teerc, err_origin);
+-
++#ifdef SEPERATE
++	dump_time.end = clock();
++#endif
+ 	return (teerc == TEEC_SUCCESS) ? 0 : -1;
+ }
+ 
+ static int check_sdp_dumped(struct tee_ctx *ctx, void *ref, size_t len,
+ 								void *out)
+ {
+-	char *bref = (char *)ref;
+-	char *data = (char *)out;
++	unsigned char *bref = (unsigned char *)ref;
++	unsigned char *data = (unsigned char *)out;
+ 	int err = 0;
+ 
+ 	(void)ctx;
+-
++	//printf("------checking dumped-----------\n");
+ 	while(len--)
+-		if (*data++ != (unsigned char)(~(*bref++) + 1))
++		if ( (*data++) != (unsigned char)(~(*bref++)))
++		//if (*data++ != (unsigned char)(~(*bref++) + 1))
+ 			err++;
+-
+ 	return err;
+ }
+ 
+@@ -375,6 +404,7 @@ static int check_sdp_dumped(struct tee_ctx *ctx, void *ref, size_t len,
+  * whatever the test buffer size is. Random buffer is read as a ring buffer.
+  */
+ #define RANDOM_BUFFER_SIZE	(32 * 1024 + 1)
++//#define RANDOM_BUFFER_SIZE	(16* 1024 * 1024 + 1)
+ static int get_random_bytes(char *out, size_t len)
+ {
+ 	static char *rand_buf = NULL;
+@@ -439,6 +469,11 @@ int sdp_basic_test(enum test_target_ta ta, size_t size, size_t loop,
+ 	size_t sdp_size = size;
+ 	size_t offset = 0;
+ 	size_t loop_cnt = 0;
++	//TEE_Time start,end;
++#ifndef SEPERATE
++	clock_t start, end;
++	double cpu_time_used;
++#endif
+ 
+ 	if (!loop) {
+ 		fprintf(stderr, "Error: null loop value\n");
+@@ -457,6 +492,7 @@ int sdp_basic_test(enum test_target_ta ta, size_t size, size_t loop,
+ 	}
+ 
+ 	fd = allocate_ion_buffer(sdp_size, ion_heap, verbosity);
++		//printf("sdp_size=%zu\n",sdp_size);
+ 	if (fd < 0) {
+ 		verbose("Failed to allocate SDP buffer (%zu bytes) in ION heap %d: %d\n",
+ 				sdp_size, ion_heap, fd);
+@@ -467,17 +503,19 @@ int sdp_basic_test(enum test_target_ta ta, size_t size, size_t loop,
+ 	ctx = malloc(sizeof(*ctx));
+ 	if (!ctx)
+ 		goto bail1;
++	
+ 	if (create_tee_ctx(ctx, ta))
+ 		goto bail1;
+ 	if (tee_register_buffer(ctx, &shm_ref, fd))
+ 		goto bail2;
+ 
+-	/* release registered fd: tee should still hold refcount on resource */
++	// release registered fd: tee should still hold refcount on resource 
+ 	close(fd);
+ 	fd = -1;
+-
++	
+ 	/* invoke trusted application with secure buffer as memref parameter */
+ 	for (loop_cnt = loop; loop_cnt; loop_cnt--) {
++		//printf("size=%zu\n",size);
+ 		/* get an buffer of random-like values */
+ 		if (get_random_bytes((char *)ref_buf, size))
+ 			goto bail2;
+@@ -485,7 +523,17 @@ int sdp_basic_test(enum test_target_ta ta, size_t size, size_t loop,
+ 		/* random offset [0 255] */
+ 		offset = (unsigned int)*ref_buf;
+ 
++
++		//printf("----buf:0x%s\n",ref_buf);
++		//printf("----offset:%zu\n",offset);
++
++		//---time start
++		//TEE_GetSystemTime(&start);
++		//
+ 		/* TA writes into SDP buffer */
++#ifndef SEPERATE
++		start = clock();
++#endif
+ 		if (inject_sdp_data(ctx, test_buf, offset, size, shm_ref, ta))
+ 			goto bail2;
+ 
+@@ -496,6 +544,26 @@ int sdp_basic_test(enum test_target_ta ta, size_t size, size_t loop,
+ 		/* TA reads into SDP buffer */
+ 		if (dump_sdp_data(ctx, test_buf, offset, size, shm_ref, ta))
+ 			goto bail2;
++		//---time end;
++		//TEE_GetSystemTime(&end);
++#ifndef SEPERATE
++		end = clock();
++		cpu_time_used = ((double) (end - start)) / (CLOCKS_PER_SEC/ 1000);
++#endif
++
++#ifdef SEPERATE
++		inj_time.cpu_time_used = ((double) (inj_time.end - inj_time.start)) / (CLOCKS_PER_SEC/ 1000);
++		trans_time.cpu_time_used = ((double) (trans_time.end - trans_time.start)) / (CLOCKS_PER_SEC/ 1000);
++		dump_time.cpu_time_used = ((double) (dump_time.end - dump_time.start)) / (CLOCKS_PER_SEC/ 1000);
++#endif
++
++#ifdef SEPERATE
++		printf("%f\t",inj_time.cpu_time_used + trans_time.cpu_time_used + dump_time.cpu_time_used);
++#else
++		printf("%f\t",cpu_time_used);
++#endif
++		//printf("time: %d-%d = %d sec\n", start.seconds, end.seconds, (end.seconds - start.seconds) );
++		//printf("time: %d-%d = %d mi-sec\n", start.millis, end.millis, (end.millis - start.millis) );
+ 
+ 		/* check dumped data are the expected ones */
+ 		if (check_sdp_dumped(ctx, ref_buf, size, test_buf)) {
+@@ -503,6 +571,7 @@ int sdp_basic_test(enum test_target_ta ta, size_t size, size_t loop,
+ 			goto bail2;
+ 		}
+ 	}
++	printf("\n");
+ 
+ 	err = 0;
+ bail2:
+@@ -677,7 +746,7 @@ static void usage(const char *progname, size_t size, int loop, int ion_heap)
+ 
+ #define CHECK_RESULT(_res, _exp, _action) \
+ 	if ((_res) == (_exp)) { \
+-		verbose("Test passed\n"); \
++	/*	*verbose("Test passed\n");*/ \
+ 	} else { \
+ 		verbose("Test failed!\n"); \
+ 		_action; \
+@@ -685,8 +754,8 @@ static void usage(const char *progname, size_t size, int loop, int ion_heap)
+ 
+ int sdp_basic_runner_cmd_parser(int argc, char *argv[])
+ {
+-	size_t test_size = 5000;
+-	size_t test_loop = 1000;
++	size_t test_size = 1;//5000;
++	size_t test_loop = 1;
+ 	int ion_heap = DEFAULT_ION_HEAP_TYPE;
+ 	int rnd_offset = 1;
+ 	int verbosity = 1;
+@@ -722,18 +791,18 @@ int sdp_basic_runner_cmd_parser(int argc, char *argv[])
+ 		}
+ 	}
+ 
+-	verbose("\nSecure Data Path basic access: "
+-		"NS invokes SDP TA\n");
++	//verbose("\nSecure Data Path basic access: "
++	//	"NS invokes SDP TA\n");
+ 	err = sdp_basic_test(TEST_NS_TO_TA, test_size, test_loop, ion_heap,
+ 			     rnd_offset, verbosity);
+ 	CHECK_RESULT(err, 0, return 1);
++	/*
+ 
+ 	verbose("\nSecure Data Path basic access: "
+ 		"SDP TA invokes SDP TA\n");
+ 	err = sdp_basic_test(TEST_TA_TO_TA, test_size, test_loop, ion_heap,
+ 			     rnd_offset, verbosity);
+ 	CHECK_RESULT(err, 0, return 1);
+-
+ 	verbose("\nSecure Data Path basic access: "
+ 		"SDP TA invokes SDP pTA\n");
+ 	err = sdp_basic_test(TEST_TA_TO_PTA, test_size, test_loop, ion_heap,
+@@ -745,11 +814,14 @@ int sdp_basic_runner_cmd_parser(int argc, char *argv[])
+ 	err = sdp_basic_test(TEST_NS_TO_PTA, test_size, test_loop, ion_heap,
+ 			     rnd_offset, verbosity);
+ 	CHECK_RESULT(err, 1, return 1);
+-
++	*/
++	/*
+ 	verbose("\nSecure Data Path basic access: "
+ 		"Invoke TA with out of bounds buffer references\n");
+ 	err = sdp_out_of_bounds_memref_test(test_size, ion_heap, verbosity);
+ 	CHECK_RESULT(err, 0, return 1);
+ 
++	*/
++
+ 	return 0;
+ }
+diff --git a/optee_test_orign/ta/sdp_basic/include/user_ta_header_defines.h b/home/zw9ga/git/cs6456/p3/exp3/optee_test/ta/sdp_basic/include/user_ta_header_defines.h
+index 3a44c23..73a4c97 100644
+--- a/optee_test_orign/ta/sdp_basic/include/user_ta_header_defines.h
++++ b/home/zw9ga/git/cs6456/p3/exp3/optee_test/ta/sdp_basic/include/user_ta_header_defines.h
+@@ -15,7 +15,9 @@
+ 				TA_FLAG_SECURE_DATA_PATH | \
+ 				TA_FLAG_CACHE_MAINTENANCE)
+ 
+-#define TA_STACK_SIZE		(2 * 1024)
++//#define TA_STACK_SIZE		(4 * 1024)
++//#define TA_DATA_SIZE		(64 *1024)
+ #define TA_DATA_SIZE		(32 * 1024)
++#define TA_STACK_SIZE		(2 * 1024)
+ 
+ #endif /* USER_TA_HEADER_DEFINES_H */
+diff --git a/optee_test_orign/ta/sdp_basic/ta_sdp_basic.c b/home/zw9ga/git/cs6456/p3/exp3/optee_test/ta/sdp_basic/ta_sdp_basic.c
+index 1f9485e..05a3e5e 100644
+--- a/optee_test_orign/ta/sdp_basic/ta_sdp_basic.c
++++ b/home/zw9ga/git/cs6456/p3/exp3/optee_test/ta/sdp_basic/ta_sdp_basic.c
+@@ -12,7 +12,7 @@
+ #include <tee_internal_api.h>
+ #include <tee_ta_api.h>
+ #include <trace.h>
+-
++#include <time.h>
+ 
+ /*
+  * Basic Secure Data Path access test commands:
+@@ -158,7 +158,10 @@ static TEE_Result cmd_transform(uint32_t types,
+ 	p = (unsigned char *)params[0].memref.buffer;
+ 	sz = params[0].memref.size;
+ 	for (; sz; sz--, p++)
+-			*p = ~(*p) + 1;
++			//*p = ~(*p) + 1;
++			*p = ~(*p);
++	
++	//EMSG("--transed val: 0x%s",(unsigned char *)params[0].memref.buffer);
+ 
+ #ifdef CFG_CACHE_API
+ 	rc = TEE_CacheFlush(params[0].memref.buffer,

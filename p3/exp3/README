@@ -1,0 +1,14 @@
+
+
+
+
+1. Change optee_os/core/arch/arm/include/mm/pgt_cache.h See diff-ptg.diff for details
+     Or replace the original file with provided one.
+ 
+     #define PGT_CACHE_SIZE  12
+     #define PGT_CACHE_SIZE  ROUNDUP(CFG_NUM_THREADS * 12, PGT_NUM_PGT_PER_PAGE)
+2. in QEUME
+	2.1 - make buildroot CFG_SECURE_DATA_PATH=y CFG_DYN_SHM_CAP=y CFG_WITH_LPAE=y CFG_TEE_RAM_VA_SIZE=0x00300000 -j `nproc`
+	2.2 - make run-only QEMU_VIRTFS_ENABLE=y QEMU_USERNET_ENABLE=y QEMU_VIRTFS_HOST_DIR=/ABS-path-to/shared_folder/
+	2.3 - IN CA: mkdir shared && mount -t 9p -o trans=virtio host shared && cd shared && sh run.sh 100 2>&1 |tee output
+	   

@@ -1,0 +1,18 @@
+diff --git a/home/zw9ga/git/orin/optee-qemuv8/optee_os/core/arch/arm/include/mm/pgt_cache.h b/home/zw9ga/git/cs6456/p3/exp3/pgt_cache.h
+index 99b9058..6aecfe3 100644
+--- a/home/zw9ga/git/orin/optee-qemuv8/optee_os/core/arch/arm/include/mm/pgt_cache.h
++++ b/home/zw9ga/git/cs6456/p3/exp3/pgt_cache.h
+@@ -38,9 +38,11 @@ struct pgt {
+  * Reserve 2 page tables per thread, but at least 4 page tables in total
+  */
+ #if CFG_NUM_THREADS < 2
+-#define PGT_CACHE_SIZE	4
++//#define PGT_CACHE_SIZE	4
++#define PGT_CACHE_SIZE	12
+ #else
+-#define PGT_CACHE_SIZE	ROUNDUP(CFG_NUM_THREADS * 2, PGT_NUM_PGT_PER_PAGE)
++//#define PGT_CACHE_SIZE ROUNDUP(CFG_NUM_THREADS * 6, PGT_NUM_PGT_PER_PAGE)
++#define PGT_CACHE_SIZE	ROUNDUP(CFG_NUM_THREADS * 12, PGT_NUM_PGT_PER_PAGE)
+ #endif
+ 
+ SLIST_HEAD(pgt_cache, pgt);
