@@ -1,0 +1,12 @@
+
+
+run:
+1. mkdir shared && mount -t 9p -o trans=virtio host shared && cd shared
+
+2. optee_example_aes [enc/dect] [input-img-path] [out-path] [key (len:16)]
+
+	1.encrpted img
+	e.g.     optee_example_aes enc plate.jpg test_enc.jpg 1234567890123456
+	
+	1. dect plate   (still need out-path but it will do noting)
+	e.g.     optee_example_aes dect plate.jpg test_enc.jpg 1234567890123456
